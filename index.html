@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jay Kozatt | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			function ReadMore(id) {
+			  var dots = document.getElementById("dots"+id);
+			  var moreText = document.getElementById("more"+id);
+			  var btnText = document.getElementById("myBtn"+id);
+			  var pic = document.getElementById("pic"+id);
+			  var text = document.getElementById("text"+id);
+			
+			  if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more"; 
+				moreText.style.display = "none";
+
+				// if (pic != null && text != null) {
+				// 	pic.style.order = "initial";
+				// 	text.style.order = "initial";
+				// 	moreText.style.order = "initial";
+				// }
+
+			  } else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less"; 
+				moreText.style.display = "inline";
+				// if (pic != null && text != null) {
+				// 	pic.style.order = "1";
+				// 	text.style.order = "2";
+				// 	moreText.style.order = "3";
+				// }
+			  }
+
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-user"><span>Profile</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Portfolio</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<!-- <a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a> -->
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+										Jay Kozatt
+									</h1>
+									<p id="jobtitle">
+										Gameplay Programmer
+									</p>
+									<br>
+									<p id="about">
+										As a game developer, I have over a year's worth of experience in the realms of programming, art direction, and overall production. <br>
+										But as a person, my aim is to become the very best support I can ever be.
+									</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<!-- <span class="arrow icon solid fa-chevron-right"><span>See my work</span></span> -->
+									<img src="images/me.png" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">My Story</h2>
+								</header>
+								<p id="story">
+									As a student of Computer Engineering (at <i>Universidad Simón Bolívar</i> - Venezuela), I began my journey as a generalist programmer, working on basic tools & small projects typical of every formal education institution out there.<br>
+									<br>
+									But as I explored many of the branches available to me, I found myself particularly interested on two subdomains<span id="dotsStory">...</span><span id="moreStory">: <br>
+									<br>
+									<i>Language Processing</i>, and <i>Game Development.</i> <br>
+									<br>
+									The combination of which, led me down a rabbit hole that saw me spending the better part of my first 3 indie years studying linguistics and game design as a solo developer, in order to build a text recognition & processing engine that was to be used as part of a game centered around a Robin Hood-esque conman, with a silver tongue. <br>
+									<br>
+									To my dismay, and despite my stubborness, this project proved to be beyond my capabilities at the time, considering the resources I had access to. Meaning that, a working executable was never achieved. <br> 
+									<br>
+									And so, the project was archived, and I've worked on smaller projects ever since.
+								</span></p>
+								<button onclick="ReadMore('Story')" id="myBtnStory">Read more</button>
+								
+								<hr>
+								<header>
+									<h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+										My Latest Work
+									</h2>
+								</header>
+								<p id="story">
+									These are my highlights:
+								</p>
+
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small" id="picBoat">
+											<a href="images/pic01.png">
+												<img src="images/pic01.png" class="image fit" alt="">
+											</a>
+										</div>
+										<div class="col-8 col-6-medium col-12-small" id="textBoat">
+											<h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+												In Deep Water!
+											</h3>
+											<p id="description">
+												This is my current project. Still a <i>work in progress</i>. <br>
+												<!-- <br> -->
+												A 2D sailing experience for mobile, in which you head out into the ocean, at the helm of a sailboat, to salvage cargo left about in wreckages caused by the uncaring violence of the mistress sea<span id="dotsBoat">...</span>.
+											</p>
+										</div>
+										<div class="fit">
+											<span id="moreBoat">
+												<p id="description">
+													This is a project made with the help of very young people, whom I've been helping learn each their respective crafts. And I'm quite proud so far about our progress. <br>
+													<br>
+													The design and programming for the game has been authored by me. While the art and music has been authored by my team. <br>
+													<div class="row">
+														<b>Source (Not currently public)</b> <br>
+														<a href="https://drive.google.com/file/d/1zaUDMsVXqKDMRK0X67St9xbb56v9McVc/view?usp=drivesdk">
+															<button>Download</button>
+														</a>
+													</div>
+												</p>
+												<h4 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+													Controls: (For PC version)
+												</h4>
+												<ul id="description">
+													<li>Click the slider to control the sail.</li>
+													<li>Click on the screen to jump.</li>
+													<li>A and D to tilt the ship.</li>
+												</ul>
+
+											</span>
+										</div>
+									</div>
+									<button onclick="ReadMore('Boat')" id="myBtnBoat">Read more</button>
+
+									<hr>
+
+									<div class="row">
+										<div class="col-8 col-6-medium col-12-small" id="textHH">
+											<h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+												Project Heaven & Hell
+											</h3>
+											<p id="description">
+												A story-driven puzzle platformer, in which you control a Shade with the ability to jump between Heaven and Hell at will. <br>
+												The story was meant to explore the dualities of human society on the subjects of Freedom & Order followed to their extremes<span id="dotsHH">...</span>.
+											</p>
+										</div>
+										<div class="col-4 col-6-medium col-12-small" id="picHH">
+											<a href="images/pic02.png">
+												<img src="images/pic02.png" class="image fit" alt="">
+											</a>
+										</div>
+										<div class="fit">
+											<span id="moreHH">
+												<p id="description">
+													This was a project led by alias "AudioDread", for whom I led the programming efforts. However, the project never really got off the ground before the team dissolved. And so, the project got <b>abandoned</b>. <br>
+													<br>
+													By that time, I had been able to get a functioning custom-made character controller with coyote time, the ability to switch between dimensions (Heaven and Hell), and the ability to partially shift dimension, enabling you to phase through obstacles and launch yourself through the air like a rubber band. <br>
+													<br>
+													While we didn't get the chance to explore those mechanics, I believe we had an interesting core that held some potential. But you'll be a better judge of that. <br>
+													<div class="row">
+														<a href="https://github.com/jaykozatt/Heaven-Hell-Game">
+															<button>Source</button>
+														</a> <br>
+														<a href="https://drive.google.com/file/d/100rz63M46MBo_Eon_0biDzcnMv-j1bRg/view?usp=drivesdk">
+															<button>Download</button>
+														</a>
+													</div>
+												</p>
+												<h4 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+													Controls:
+												</h4>
+												<ul id="description">
+													<li>A and D to move the character.</li>
+													<li>Space bar to jump.</li>
+													<li>Right click to switch dimensions.</li>
+													<li>Hold left click to phase through objects.</li>
+													<li>Release left click while phasing through an object to launch yourself in the direction of the mouse cursor.</li>
+													<li>Press R to reset.</li>
+												</ul>
+
+											</span>
+										</div>
+									</div>
+									<button onclick="ReadMore('HH')" id="myBtnHH">Read more</button>
+
+									<hr>
+
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small" id="picFMOD">
+											<a href="images/pic03.png">
+												<img src="images/pic03.png" class="image fit" alt="">
+											</a>
+										</div>
+										<div class="col-8 col-6-medium col-12-small" id="textFMOD">
+											<h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+												FMOD-RMVXA Interface
+											</h3>
+											<p id="description">
+												The FMOD middleware does not support RPG Maker VX Ace (RMVXA) out of the box. Therefore, in order to make use of it, an interface with the FMOD API was needed.  <br>
+												This is such interface, however rudimentary<span id="dotsFMOD">...</span>.
+											</p>
+										</div>
+										<div class="fit">
+											<span id="moreFMOD">
+												<p id="description">
+													Back when I used to work with RMVXA instead of Unity, I made this interface for the API so that I could make use of FMOD's 3D audio panning capabilities. <br>
+													<br>
+													The project this was intended for, was Project Conman (the game I alluded to in the "My Story" section), which was a top-down 2D stealth game. <br>
+													<br>
+													What I wanted for such project was to imitate the soundscape that was so characteristic of the <i>Thief</i> saga, in which you can use your very own ears to accurately measure the distance and position of enemies. And FMOD would have given me such capabilities. <br>
+													<br>
+													And so, this plugin was born. Which wasn't without trouble due to the scarce amount of DLL-reading libraries packed within the RMVXA proprietary Ruby Interpreter. <br>
+													<br> 
+													<a href="https://github.com/jaykozatt/fmod-rmvxa-interface">
+														<button>Source</button>
+													</a>
+												</p>
+											</span>
+										</div>
+									</div>
+									<button onclick="ReadMore('FMOD')" id="myBtnFMOD">Read more</button>
+
+									<hr>
+
+									<div class="row">
+										<div class="col-8 col-6-medium col-12-small" id="textRetina">
+											<h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+												Retina - Language Interpreter
+											</h3>
+											<p id="description">
+												A gimick software that enables you to produce drawings, by means of writing code. <br>
+												You control the movement of a turtle, through which you drop ink on each pixel along its path to draw the overall image<span id="dotsRetina">...</span>.
+											</p>
+										</div>
+										<div class="col-4 col-6-medium col-12-small" id="picRetina">
+											<a href="images/pic04.png">
+												<img src="images/pic04.png" class="image fit" alt="">
+											</a>
+										</div>
+										<div class="fit">
+											<span id="moreRetina">
+												<p id="description">
+													This is something I made for a college course, back in the day. <br>
+													<br>
+													The aim was to learn the fundamentals of coding computer-language interpreters. But since the project was one of those few noteworthy assignments that one is lucky enough to have dropped on you, then I decided to showcase it for such reason. <br>
+													<br>
+													The tool in question really excels at making drawings that exhibit regular patterns. <br>
+													<br> 
+													<a href="https://github.com/jaykozatt/Retina-Language">
+														<button>Source</button>
+													</a>
+												</p>
+											</span>
+										</div>
+									</div>
+									<button onclick="ReadMore('Retina')" id="myBtnRetina">Read more</button>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+										Contact Me
+									</h2>
+								</header>
+								<div class="col-12">
+									<div class="row">
+										<h4 class="icon solid fa-envelope">
+											Email: <a href="jaykozatt@gmail.com">jaykozatt@gmail.com</a>
+										</h4>
+									</div>
+									<div class="row">
+										<h4 class="icon solid brands fa-discord">
+											Discord: Jay Kozatt#3279
+										</h4>
+
+									</div>
+
+									<!-- <a href="#contact" class="icon solid fa-envelope"><span></span></a> -->
+								</div>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Jay Kozatt 2022.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
