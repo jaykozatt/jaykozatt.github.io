@@ -84,9 +84,9 @@
 
 						<!-- Work -->
 							<article id="work" class="panel">
-								<Header>
+								<header>
 									<h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">My Resume</h2>
-								</Header>
+								</header>
 								<div class="col-12">
 									<!-- <h4> -->
 										<!-- <span class="icon solid fa-user fa-fw"></span> -->
@@ -122,11 +122,53 @@
 										My Latest Work
 									</h2>
 								</header>
-								<p class="description">
-									These are my highlights:
-								</p>
 
-								<section>
+								<section class="slider-container">
+
+									<div class="gradient" id="prevButton">
+										<i class="fas fa-chevron-left"></i>
+									</div>
+									<div class="gradient" id="nextButton">
+										<i class="fas fa-chevron-right"></i>
+									</div>
+
+									<div class="slider">
+										<div class="card">
+											<img src="images/pic01.png" alt="">
+											<div class="card-description">
+												<h3>In Deep Water!</h3>
+												<p>This is the project description, intended to give an overview of the project in question and the difficulties faced in producing it.</p>
+											</div>
+										</div>
+										<div class="card">
+											<img src="images/pic02.png" alt="">
+											<div class="card-description">
+												<h3>All Bets Are Off!</h3>
+												<p>This is the project description, intended to give an overview of the project in question and the difficulties faced in producing it.</p>
+											</div>
+										</div>
+										<div class="card">
+											<img src="images/pic03.png" alt="">
+											<div class="card-description">
+												<h3>Project Title</h3>
+												<p>This is the project description, intended to give an overview of the project in question and the difficulties faced in producing it.</p>
+											</div>
+										</div>
+										<div class="card">
+											<img src="images/pic04.png" alt="">
+											<div class="card-description">
+												<h3>Project Title</h3>
+												<p>This is the project description, intended to give an overview of the project in question and the difficulties faced in producing it.</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- <button id="prevButton">Prev</button>
+									<button id="nextButton">Next</button> -->
+
+								</section>
+
+								<!-- <section>
 									<div class="row">
 										<div class="col-4 col-6-medium col-12-small" id="picBoat">
 											<a href="images/pic01.png">
@@ -295,7 +337,7 @@
 										</div>
 									</div>
 									<button onclick="ReadMore('Retina')" id="myBtnRetina">Read more</button>
-								</section>
+								</section> -->
 							</article>
 
 						<!-- Contact -->
@@ -336,7 +378,7 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Jay Kozatt 2022.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Jay Kozatt 2022.</li><li>Template Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 
@@ -348,6 +390,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/slider.js"></script>
 
 	</body>
 </html>

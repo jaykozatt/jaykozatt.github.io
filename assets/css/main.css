@@ -2227,3 +2227,102 @@ input, select, textarea {
 		display: none;
 	}
 
+
+	.slider-container {
+		position: relative;
+		width: 100%+5em;
+		min-height: 500px;
+		margin: 0em -2.5em;
+		padding: 0% 5%;
+	}
+	
+	.slider {
+		display: flex;
+		flex-direction: row;
+		width: 133%;
+		transition: transform .4s ease-in-out;
+	}
+
+	@media screen and (max-width: 1680px) {
+		.slider {
+			width: 200%;
+		}
+	}
+
+	@media screen and (max-width: 968px) {
+		.slider {
+			width: 400%;
+		}
+	}
+
+	.card {
+		width: 100%;
+		margin: 0 .5em;
+		border: 1px solid;
+		border-radius: 1em;
+		overflow: hidden;
+		z-index: 9;
+	}
+
+	.card img {
+		object-fit: cover;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+	}
+
+	.card-description {
+		padding: 1.2em;
+		/* overflow-y: scroll; */
+	}
+
+		.card-description h3 {
+			font-weight: bold;
+		}
+	
+	#prevButton, #nextButton {
+		position: absolute;
+		z-index: 10;
+		height: 100%;
+		width: 10%;
+	}
+	
+		#prevButton {
+			left: 0%;
+			background-image: linear-gradient(to right, white, rgba(0, 0, 0, 0));
+		}
+		
+		#nextButton {
+			right: 0%;
+			background-image: linear-gradient(to left, white, rgba(0, 0, 0, 0));
+		}
+	
+		#prevButton i, #nextButton i {
+			position: absolute;
+			top: 40%;
+			z-index: inherit;
+			font-size: 30px;
+			text-align: center;
+			padding: 5px;
+			color: white;
+			opacity: 0.9;
+			background-color: black;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+
+			#prevButton i {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				left: 15%;
+			}
+
+			#nextButton i {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				right: 15%;
+			}
+	
