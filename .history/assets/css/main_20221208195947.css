@@ -2231,7 +2231,7 @@ input, select, textarea {
 
 :root {
 	--link-color : rgb(54, 54, 54);
-	--link-color-hover : hsl(264.88,57.75%,19.92%);
+	--link-color-hover : rgb(28,20,57);
 }
 
 .ml-1 {

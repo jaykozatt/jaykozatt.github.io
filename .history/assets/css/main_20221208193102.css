@@ -2229,27 +2229,6 @@ input, select, textarea {
 
 /* Maria's code */
 
-:root {
-	--link-color : rgb(54, 54, 54);
-	--link-color-hover : hsl(264.88,57.75%,19.92%);
-}
-
-.ml-1 {
-	margin-left: .5rem;
-}
-
 .ml-2 {
 	margin-left: 1rem;
-}
-
-.link-color {
-	color: var(--link-color);
-}
-
-.link-color-hover:hover {
-	color: var(--link-color-hover);
-}
-
-.no-decoration {
-	text-decoration: none;
 }
