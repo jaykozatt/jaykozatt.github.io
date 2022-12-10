@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Astral by HTML5 UP
 	html5up.net | @ajlkn
@@ -8,124 +8,218 @@
 	<head>
 		<title>Jay Kozatt | Portfolio</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+		<!-- Swiper JS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<noscript
+			><link rel="stylesheet" href="assets/css/noscript.css"
+		/></noscript>
 		<script>
 			function ReadMore(id) {
-			  var dots = document.getElementById("dots"+id);
-			  var moreText = document.getElementById("more"+id);
-			  var btnText = document.getElementById("myBtn"+id);
-			  var pic = document.getElementById("pic"+id);
-			  var text = document.getElementById("text"+id);
-			
-			  if (dots.style.display === "none") {
-				dots.style.display = "inline";
-				btnText.innerHTML = "Read more"; 
-				moreText.style.display = "none";
+				var dots = document.getElementById('dots' + id);
+				var moreText = document.getElementById('more' + id);
+				var btnText = document.getElementById('myBtn' + id);
+				var pic = document.getElementById('pic' + id);
+				var text = document.getElementById('text' + id);
 
-				// if (pic != null && text != null) {
-				// 	pic.style.order = "initial";
-				// 	text.style.order = "initial";
-				// 	moreText.style.order = "initial";
-				// }
-				var element = document.getElementById(id);
-				element.scrollIntoView({block:"center"});
-				
-			  } else {
-				dots.style.display = "none";
-				btnText.innerHTML = "Read less"; 
-				moreText.style.display = "inline";
-				// if (pic != null && text != null) {
-				// 	pic.style.order = "1";
-				// 	text.style.order = "2";
-				// 	moreText.style.order = "3";
-				// }
-			  }
+				if (dots.style.display === 'none') {
+					dots.style.display = 'inline';
+					btnText.innerHTML = 'Read more';
+					moreText.style.display = 'none';
+
+					// if (pic != null && text != null) {
+					// 	pic.style.order = "initial";
+					// 	text.style.order = "initial";
+					// 	moreText.style.order = "initial";
+					// }
+					var element = document.getElementById(id);
+					element.scrollIntoView({ block: 'center' });
+				} else {
+					dots.style.display = 'none';
+					btnText.innerHTML = 'Read less';
+					moreText.style.display = 'inline';
+					// if (pic != null && text != null) {
+					// 	pic.style.order = "1";
+					// 	text.style.order = "2";
+					// 	moreText.style.order = "3";
+					// }
+				}
 			}
 		</script>
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper-->
-			<div id="wrapper">
+		<div id="wrapper">
+			<!-- Nav -->
+			<nav id="nav">
+				<a href="#" class="icon solid fa-user"><span>Profile</span></a>
+				<a href="#work" class="icon solid fa-folder"><span>Portfolio</span></a>
+				<a href="#contact" class="icon solid fa-envelope"
+					><span>Contact</span></a
+				>
+				<!-- <a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a> -->
+			</nav>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-user"><span>Profile</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Portfolio</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<!-- <a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a> -->
-					</nav>
+			<!-- Main -->
+			<div id="main">
+				<!-- Me -->
+				<article id="home" class="panel intro">
+					<header>
+						<h1
+							style="
+								font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+									sans-serif;
+							"
+						>
+							Jay Kozatt
+						</h1>
+						<p id="jobtitle">Gameplay Programmer</p>
+						<br />
+						<p id="about">
+							As a game developer, I have over a year's worth of experience in
+							the realms of programming, art direction, and overall production.
+							<br />
+							But as a person, my aim is to become the very best support I can
+							ever be.
+						</p>
+					</header>
+					<a href="#work" class="jumplink pic">
+						<!-- <span class="arrow icon solid fa-chevron-right"><span>See my work</span></span> -->
+						<img src="images/profilepic.png" alt="" />
+					</a>
+				</article>
 
-				<!-- Main -->
-					<div id="main">
+				<!-- Work -->
+				<article id="work" class="panel">
+					<header>
+						<h2
+							style="
+								font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+									sans-serif;
+							"
+						>
+							My Resume
+						</h2>
+					</header>
+					<div class="col-12">
+						<!-- <h4> -->
+						<!-- <span class="icon solid fa-user fa-fw"></span> -->
+						<!-- </h4> -->
+						<a href="docs/Jay Kozatt - CV 2022.pdf" target="_blank"
+							><button>With Photo</button></a
+						>
+						<a href="docs/Jay Kozatt - CV 2022 (Photoless).pdf" target="_blank"
+							><button>Photoless</button></a
+						>
+					</div>
 
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-										Jay Kozatt
-									</h1>
-									<p id="jobtitle">
-										Gameplay Programmer
-									</p>
-									<br>
-									<p id="about">
-										As a game developer, I have over a year's worth of experience in the realms of programming, art direction, and overall production. <br>
-										But as a person, my aim is to become the very best support I can ever be.
-									</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<!-- <span class="arrow icon solid fa-chevron-right"><span>See my work</span></span> -->
-									<img src="images/profilepic.png" alt="" />
-								</a>
-							</article>
+					<hr />
+					<header>
+						<h2
+							style="
+								font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+									sans-serif;
+							"
+						>
+							My Story
+						</h2>
+					</header>
+					<p id="Story" class="description">
+						As a student of Computer Engineering (at
+						<i>Universidad Simón Bolívar</i> - Venezuela), I began my journey as
+						a generalist programmer, working on basic tools & small projects
+						typical of every formal education institution out there.<br />
+						<br />
+						But as I explored many of the branches available to me, I found
+						myself particularly interested on two subdomains<span id="dotsStory"
+							>...</span
+						><span id="moreStory"
+							>: <br />
+							<br />
+							<i>Language Processing</i>, and <i>Game Development.</i> <br />
+							<br />
+							The combination of which, led me down a rabbit hole that saw me
+							spending the better part of my first 3 indie years studying
+							linguistics and game design as a solo developer, in order to build
+							a text recognition & processing engine that was to be used as part
+							of a game centered around a Robin Hood-esque conman, with a silver
+							tongue. <br />
+							<br />
+							To my dismay, and despite my stubborness, this project proved to
+							be beyond my capabilities at the time, considering the resources I
+							had access to. Meaning that, a working executable was never
+							achieved. <br />
+							<br />
+							And so, the project was archived, and I've worked on smaller
+							projects ever since. <br />
+							<br />
+							<b
+								>(You can read more about my journey on
+								<a href="https://jaykozatt.medium.com">Medium</a>)</b
+							>
+						</span>
+					</p>
+					<button onclick="ReadMore('Story')" id="myBtnStory">Read more</button>
 
-						<!-- Work -->
-							<article id="work" class="panel">
-								<Header>
-									<h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">My Resume</h2>
-								</Header>
-								<div class="col-12">
-									<!-- <h4> -->
-										<!-- <span class="icon solid fa-user fa-fw"></span> -->
-									<!-- </h4> -->
-									<a href="docs/Jay Kozatt - CV 2022.pdf" target="_blank"><button>With Photo</button></a>
-									<a href="docs/Jay Kozatt - CV 2022 (Photoless).pdf" target="_blank"><button>Photoless</button></a>
+					<hr />
+					<header>
+						<h2
+							style="
+								font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+									sans-serif;
+							"
+						>
+							My Latest Work
+						</h2>
+					</header>
+
+					<!--mvbri's code-->
+
+					<section class="work-proyects">
+						<p class="description">These are my highlights:</p>
+						<section class="p-relative">
+							<div class="container swiper mySwiper">
+								<div class="content swiper-wrapper">
+									<div class="card swiper-slide">
+										<div class="card-content">
+											<div class="image-card">
+												<img
+													src="https://images.unsplash.com/photo-1646736009298-202d1dba28dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+													alt=""
+												/>
+											</div>
+
+											<div class="name-profession">
+												<span class="name ml-2">Nombre del proyecto</span>
+											</div>
+
+											<p class="proyect-description ml-2">
+												Lorem ipsum dolor sit amet consectetur, adipisicing
+												elit. Non ducimus reiciendis in architecto at odio.
+											</p>
+
+											<div class="buttons">
+												<button class="aboutMe">¿Do you want know more?</button>
+											</div>
+										</div>
+									</div>
 								</div>
+							</div>
 
-								<hr>
-								<header>
-									<h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">My Story</h2>
-								</header>
-								<p id="Story" class="description">
-									As a student of Computer Engineering (at <i>Universidad Simón Bolívar</i> - Venezuela), I began my journey as a generalist programmer, working on basic tools & small projects typical of every formal education institution out there.<br>
-									<br>
-									But as I explored many of the branches available to me, I found myself particularly interested on two subdomains<span id="dotsStory">...</span><span id="moreStory">: <br>
-									<br>
-									<i>Language Processing</i>, and <i>Game Development.</i> <br>
-									<br>
-									The combination of which, led me down a rabbit hole that saw me spending the better part of my first 3 indie years studying linguistics and game design as a solo developer, in order to build a text recognition & processing engine that was to be used as part of a game centered around a Robin Hood-esque conman, with a silver tongue. <br>
-									<br>
-									To my dismay, and despite my stubborness, this project proved to be beyond my capabilities at the time, considering the resources I had access to. Meaning that, a working executable was never achieved. <br> 
-									<br>
-									And so, the project was archived, and I've worked on smaller projects ever since. <br>
-									<br>
-									<b>(You can read more about my journey on <a href="https://jaykozatt.medium.com">Medium</a>)</b>
-								</span></p>
-								<button onclick="ReadMore('Story')" id="myBtnStory">Read more</button>
-								
-								<hr>
-								<header>
-									<h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-										My Latest Work
-									</h2>
-								</header>
-								<p class="description">
-									These are my highlights:
-								</p>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+						</section>
+					</section>
 
+					<!-- 
 								<section>
 									<div class="row">
 										<div class="col-4 col-6-medium col-12-small" id="picBoat">
@@ -295,65 +389,83 @@
 										</div>
 									</div>
 									<button onclick="ReadMore('Retina')" id="myBtnRetina">Read more</button>
-								</section>
-							</article>
+								</section> -->
+				</article>
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-										Contact Me
-									</h2>
-								</header>
-								<div class="row">
-									<h4>
-										<div class="col-12">
-											<a class="link-color link-color-hover no-decoration" href="jaykozatt@gmail.com" target="_blank">
-												<span class="icon solid fa-envelope fa-fw"></span>
-												<span class="ml-1">Email</span>
-											</a>
-										</div>
-										<div class="col-12">
-											<a class="link-color link-color-hover no-decoration" href="https://www.linkedin.com/in/jaykozatt/" target="_blank">
-												<span class="icon solid brands fa-linkedin fa-fw"></span>
-												<span class="ml-1">LinkedIn</span>
-											</a>
-										</div>
-										<div class="col-12">
-											<a class="link-color link-color-hover no-decoration" href="https://www.twitter.com/jaykozatt" target="_blank">
-												<span class="icon solid brands fa-twitter fa-fw"></span>
-												<span class="ml-1">Twitter</span>
-											</a>
-										</div>
-										<div class="col-12">
-											<span class="icon solid brands fa-discord fa-fw"></span>
-											<span class="ml-1">
-												Discord: Jay Kozatt#3279
-											</span> 
-										</div>
-									</h4>
+				<!-- Contact -->
+				<article id="contact" class="panel">
+					<header>
+						<h2
+							style="
+								font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+									sans-serif;
+							"
+						>
+							Contact Me
+						</h2>
+					</header>
+					<div class="row">
+						<h4>
+							<div class="col-12">
+								<a
+									class="link-color link-color-hover no-decoration"
+									href="jaykozatt@gmail.com"
+									target="_blank"
+								>
+									<span class="icon solid fa-envelope fa-fw"></span>
+									<span class="ml-1">Email</span>
+								</a>
+							</div>
+							<div class="col-12">
+								<a
+									class="link-color link-color-hover no-decoration"
+									href="https://www.linkedin.com/in/jaykozatt/"
+									target="_blank"
+								>
+									<span class="icon solid brands fa-linkedin fa-fw"></span>
+									<span class="ml-1">LinkedIn</span>
+								</a>
+							</div>
+							<div class="col-12">
+								<a
+									class="link-color link-color-hover no-decoration"
+									href="https://www.twitter.com/jaykozatt"
+									target="_blank"
+								>
+									<span class="icon solid brands fa-twitter fa-fw"></span>
+									<span class="ml-1">Twitter</span>
+								</a>
+							</div>
+							<div class="col-12">
+								<span class="icon solid brands fa-discord fa-fw"></span>
+								<span class="ml-1"> Discord: Jay Kozatt#3279 </span>
+							</div>
+						</h4>
 
-									<!-- <a href="#contact" class="icon solid fa-envelope"><span></span></a> -->
-								</div>
-							</article>
-
+						<!-- <a href="#contact" class="icon solid fa-envelope"><span></span></a> -->
 					</div>
-
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Jay Kozatt 2022.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-
+				</article>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Footer -->
+			<div id="footer">
+				<ul class="copyright">
+					<li>&copy; Jay Kozatt 2022.</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</div>
 
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Swiper JS -->
+		<!--Jony este es el código del Carousel principal de los proyectos-->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="./assets/js/swiper.js"></script>
 	</body>
 </html>
