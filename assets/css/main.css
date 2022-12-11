@@ -1434,7 +1434,7 @@ input, select, textarea {
 		clear: both;
 	}
 
-	p, ul, ol, dl, table, blockquote, form {
+	ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
 	}
 
@@ -2232,9 +2232,10 @@ input, select, textarea {
 /* mvbri's code */
 
 :root {
-	--primary-purple: rgb(​   46, ​   21, ​   80)
+	--primary-purple : rgb(46, 21, 80);
 	--link-color : rgb(54, 54, 54);
 	--link-color-hover : var(--primary-purple);
+	--button-hover : rgb(83, 40, 143);
 }
 
 /* Clases utilitarias */
@@ -2251,6 +2252,10 @@ input, select, textarea {
 	margin-left: 1rem;
 }
 
+.link-t {
+	transition: all 0.3s ease;
+}
+
 .link-color {
 	color: var(--link-color);
 }
@@ -2265,8 +2270,6 @@ input, select, textarea {
 
 /* slider */
 
-
-  
   .swiper-pagination .swiper-pagination-bullet {
 	height: 7px;
 	width: 26px;
@@ -2301,23 +2304,16 @@ input, select, textarea {
 	border-radius: 20px 20px 0 0;
   }
   
-  .image-card {
-	padding: 3px;
-	background-color: var(--primary-purple);
-  }
-  
   .image-card img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	border: 3px solid #fff;
 	aspect-ratio: 16/9;
   }
   
   .card-content {
 	display: flex;
 	flex-direction: column;
-	padding: 30px;
 	position: relative;
 	z-index: 100;
   }
@@ -2359,9 +2355,14 @@ input, select, textarea {
 	font-weight: 500;
   }
 
-  .swiper-button-prev, .swiper-rtl .swiper-button-next {
-    left: -15px;
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: -4%;
     right: auto;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: -4%;
+    left: auto;
 }
   
   .buttons {
@@ -2371,19 +2372,62 @@ input, select, textarea {
 	margin-top: 20px;
   }
   
-  .buttons button {
+  .buttons a {
 	background-color: var(--primary-purple);
 	outline: none;
 	border: none;
 	color: #fff;
-	padding: 0.5rem 0.8rem;
-	border-radius: 20px;
+	padding:  0 0.8rem;
+	border-radius: 8px;
 	font-size: 14px;
 	transition: all 0.3s ease;
 	cursor: pointer;
+	text-decoration: none;
+	font-weight: 400;
   }
   
-  .buttons button:hover {
-	background-color: var(--primary-purple);
+  .buttons a:hover {
+	background-color: var(--button-hover);
   }
   
+/* Carousel 2*/
+
+.carousel {
+    position: relative;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+
+.carousel-item {
+    height: 300px; /* Es importante darle una altura al item del carousel */
+	aspect-ratio: 16/9;
+	object-fit: cover;
+}
+
+.item-selected {
+    display: block;
+}
+
+.carousel-nav {
+    width: 100%;
+    padding: 2em 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center; 
+}
+
+.carousel-button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    margin: 0 .5em;
+    cursor: pointer; /* Recordar siempre el cursos pointer */
+}
+
+.button-selected {
+    background-color: rgba(255, 255, 255, .5);
+}
