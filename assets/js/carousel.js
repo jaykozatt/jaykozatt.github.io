@@ -3,8 +3,6 @@
 const reviews = [
 	{
 		id: 1,
-		name: 'Maria Victoria Briceño',
-		userJob: 'Frontend Developer',
 		img: 'images/test.png',
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. D',
 		thumb: {
@@ -22,8 +20,6 @@ const reviews = [
 	},
 	{
 		id: 2,
-		name: 'Susan Smith',
-		userJob: 'Backend Developer',
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
 		text: 'All Bets Are Off! is a deathmatch arena in which you slice and dice poker chip stacks by means of entangling them with a chain mace in the shape of a die, giving a new meaning to the phrase "rolling dice".',
 		thumb: {
@@ -41,8 +37,6 @@ const reviews = [
 	},
 	{
 		id: 3,
-		name: 'Hector',
-		userJob: 'UX Designer',
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium deleniti consectetur iustoveniam hic, voluptates quasi iure quos porro laborum, inventoreprovident?',
 		thumb: {
@@ -56,8 +50,6 @@ const reviews = [
 	},
 	{
 		id: 4,
-		name: 'Luis',
-		userJob: 'Redactor',
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium deleniti consectetur iustoveniam hic, voluptates quasi iure quos porro laborum, inventoreprovident?',
 		thumb: {
