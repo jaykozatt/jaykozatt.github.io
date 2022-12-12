@@ -2383,8 +2383,7 @@ input, select, textarea {
 	outline: none;
 	border: none;
 	color: #fff;
-	padding:  0 0.8rem;
-	border-radius: 8px;
+	padding:  0 1rem;
 	font-size: 14px;
 	transition: all 0.3s ease;
 	cursor: pointer;
