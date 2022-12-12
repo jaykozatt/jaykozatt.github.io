@@ -8,11 +8,15 @@ const reviews = [
 		img: 'images/test.png',
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. D',
 		thumb: {
-			thumbImg: ['images/test.png', 'images/test.png', 'images/test.png'],
+			thumbImg: [
+				'assets/css/images/proyects-img/the-prisioner-1.1.png',
+				'assets/css/images/proyects-img/the-prisioner-1.2.png',
+				'assets/css/images/proyects-img/the-prisioner-1.3.png',
+			],
 			descriptions: [
-				'1.Lorem ipsum dolor sit amet consectetur adipisicing elit.  fugitsed vel tempore ea',
-				'orem ipsum dolor sit amet consectetur adipilit. Dolores fugitsed vel tempore ea, qui maxime accusantium',
-				'orem ipsum dolor sit amet ctur adipisicing elit.  qui maxime accusantium',
+				'1.1 Lorem ipsum dolor sit amet consectetur adipisicing elit.  fugitsed vel tempore ea',
+				'1.2 orem ipsum dolor sit amet consectetur adipilit. Dolores fugitsed vel tempore ea, qui maxime accusantium',
+				'1.3 orem ipsum dolor sit amet ctur adipisicing elit.  qui maxime accusantium',
 			],
 		},
 	},
@@ -21,13 +25,17 @@ const reviews = [
 		name: 'Susan Smith',
 		userJob: 'Backend Developer',
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
-		text: 'Dolores fugitsed vel tempore ea, qui maxime accusantium deleniti consectetur iustoveniam hic, voluptates quasi iure quos porro laborum, inventoreprovident?',
+		text: 'All Bets Are Off! is a deathmatch arena in which you slice and dice poker chip stacks by means of entangling them with a chain mace in the shape of a die, giving a new meaning to the phrase "rolling dice".',
 		thumb: {
-			thumbImg: ['images/test.png', 'images/test.png', 'images/test.png'],
+			thumbImg: [
+				'assets/css/images/proyects-img/all-bets-are-off-2.1.png',
+				'assets/css/images/proyects-img/all-bets-are-off-2.2.png',
+				'assets/css/images/proyects-img/all-bets-are-off-2.3.png',
+			],
 			descriptions: [
-				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea',
-				'orem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium',
-				'orem ipsum dolor sit amet consectetur adipisicing elit.  qui maxime accusantium',
+				'2.1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea',
+				'2.2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium',
+				'2.3 Lorem ipsum dolor sit amet consectetur adipisicing elit.  qui maxime accusantium',
 			],
 		},
 	},
@@ -40,9 +48,9 @@ const reviews = [
 		thumb: {
 			thumbImg: ['images/test.png', 'images/test.png', 'images/test.png'],
 			descriptions: [
-				'3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea',
-				'orem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium',
-				'orem ipsum dolor sit amet consectetur adipisicing elit.  qui maxime accusantium',
+				'3.1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea',
+				'3.2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium',
+				'3.3 Lorem ipsum dolor sit amet consectetur adipisicing elit.  qui maxime accusantium',
 			],
 		},
 	},
@@ -55,9 +63,9 @@ const reviews = [
 		thumb: {
 			thumbImg: ['images/test.png', 'images/test.png', 'images/test.png'],
 			descriptions: [
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea',
-				'orem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium',
-				'orem ipsum dolor sit amet consectetur adipisicing elit.  qui maxime accusantium',
+				'4.1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea',
+				'4.2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium',
+				'4.3 Lorem ipsum dolor sit amet consectetur adipisicing elit.  qui maxime accusantium',
 			],
 		},
 	},
