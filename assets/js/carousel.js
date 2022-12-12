@@ -22,7 +22,11 @@ const reviews = [
 	{
 		id: 2,
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
-		proyectTitle: 'All Bets Are Off',
+		proyectTitle: [
+			'All Bets Are Off 1',
+			'All Bets Are Off 2',
+			'All Bets Are Off 3',
+		],
 		text: 'All Bets Are Off! is a deathmatch arena in which you slice and dice poker chip stacks by means of entangling them with a chain mace in the shape of a die, giving a new meaning to the phrase "rolling dice".',
 		thumb: {
 			thumbImg: [
@@ -40,7 +44,12 @@ const reviews = [
 	{
 		id: 3,
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
-		proyectTitle: 'a',
+		proyectTitle: [
+			'All Bets Are Off',
+			'All Bets Are Off',
+			'All Bets Are Off',
+			'All Bets Are Off',
+		],
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium deleniti consectetur iustoveniam hic, voluptates quasi iure quos porro laborum, inventoreprovident?',
 		thumb: {
 			thumbImg: ['images/test.png', 'images/test.png', 'images/test.png'],
@@ -54,7 +63,12 @@ const reviews = [
 	{
 		id: 4,
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
-		proyectTitle: 'a',
+		proyectTitle: [
+			'All Bets Are Off',
+			'All Bets Are Off',
+			'All Bets Are Off',
+			'All Bets Are Off',
+		],
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium deleniti consectetur iustoveniam hic, voluptates quasi iure quos porro laborum, inventoreprovident?',
 		thumb: {
 			thumbImg: ['images/test.png', 'images/test.png', 'images/test.png'],
