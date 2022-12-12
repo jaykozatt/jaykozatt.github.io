@@ -2392,42 +2392,107 @@ input, select, textarea {
   
 /* Carousel 2*/
 
-.carousel {
-    position: relative;
-	display: flex;
-	justify-items: center;
-	align-items: center;
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 1rem;
 }
 
-.carousel-item {
-    height: 300px; /* Es importante darle una altura al item del carousel */
-	aspect-ratio: 16/9;
-	object-fit: cover;
+.container-reviews {
+    display: flex;
 }
 
-.item-selected {
+.continer-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.block {
     display: block;
 }
 
-.carousel-nav {
-    width: 100%;
-    padding: 2em 0;
+.upperCase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-little {
+    font-size: var(--font-little);
+}
+
+.secondary-text {
+    line-height: 31px;
+}
+
+.img-container {
+	width: 100%;
+}
+
+.line::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: var(--blue-primary);
     position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center; 
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
 }
 
-.carousel-button {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, .2);
-    border-radius: 50%;
-    margin: 0 .5em;
-    cursor: pointer; /* Recordar siempre el cursos pointer */
+.icon-keyboard_arrow_left,
+.icon-keyboard_arrow_right {
+    color: var(--blue-primary);
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-.button-selected {
-    background-color: rgba(255, 255, 255, .5);
+.main-btn {
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: var(--font-little);
+    color: var(--blue-primary);
+    border: 2px solid var(--blue-primary);
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    color: #fff;
+    background-color: var(--blue-primary);
+}
+
+.thumbnails {
+    display: flex;
+    gap: .5em;
+}
+
+.thumbnails img {
+    width: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media (min-width: 576px) { 
+    .continer-card{
+        padding: 2em 2em 1em 2em;
+        margin: auto;
+    }
+
+    .img-user {
+        width: 100%;
+		height: 100%;
+		object-fit: cover;
+    	aspect-ratio: 16/9;
+    }
+   
 }

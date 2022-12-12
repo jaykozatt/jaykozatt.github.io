@@ -206,7 +206,9 @@
 											</p>
 
 											<div class="buttons ml-2">
-												<a class="btn-read" href="#carousel1"> READ MORE </a>
+												<a data-order="1" class="btn-read" href="#carousel">
+													READ MORE
+												</a>
 											</div>
 										</div>
 									</div>
@@ -230,7 +232,9 @@
 											</p>
 
 											<div class="buttons ml-2">
-												<a class="btn-read" href="#carousel2"> READ MORE </a>
+												<a data-order="2" class="btn-read" href="#carousel">
+													READ MORE
+												</a>
 											</div>
 										</div>
 									</div>
@@ -254,7 +258,9 @@
 											</p>
 
 											<div class="buttons ml-2">
-												<a class="btn-read" href="#carousel3"> READ MORE </a>
+												<a data-order="3" class="btn-read" href="#carousel">
+													READ MORE
+												</a>
 											</div>
 										</div>
 									</div>
@@ -265,19 +271,26 @@
 							<div class="swiper-button-prev"></div>
 							<div class="swiper-pagination"></div>
 						</section>
-						<article id="carousel1" class="carousel-container carousel1">
-							<div id="carousel" class="carousel">
-								<!-- <div class="carousel-item">Conten # 1</div>
-								<div class="carousel-item item-selected">Conten # 1</div>
-								<div class="carousel-item">Conten # 3</div> -->
-							</div>
-							<div class="thumbnails"></div>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-								dolor, reiciendis, ipsam, quos odit exercitationem dolorum
-								veniam accusantium optio delectus aspernatur a rerum officia
-								error aliquid vel pariatur nemo magnam.
-							</p>
+						<article
+							id="carousel"
+							class="carousel-container carousel1 p-relative"
+						>
+							<article class="continer-card">
+								<div class="img-container">
+									<img class="img-user" src="" alt="" />
+								</div>
+								<div class="thumbnails"></div>
+
+								<p class="user-text text-center"></p>
+								<div class="btn-sliders pb-1 pt-1">
+									<button class="row-left">
+										<i class="icon solid fa-arrow-left"></i>
+									</button>
+									<button class="row-right">
+										<i class="icon solid fa-arrow-right"></i>
+									</button>
+								</div>
+							</article>
 						</article>
 						<!-- 
 						<article id="carousel2" class="carousel-container">
@@ -558,8 +571,7 @@
 		<!-- Swiper JS -->
 		<!--Jony este es el código del Carousel principal de los proyectos-->
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script src="./assets/js/swiper.js"></script>
 		<!--Jony este es el código del Carousel 2 de los proyectos-->
-		<script src="./assets/js/carousel.js"></script>
+		<script type="module" src="./assets/js/carousel.js"></script>
 	</body>
 </html>
