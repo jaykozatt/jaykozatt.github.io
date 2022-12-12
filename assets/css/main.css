@@ -2506,3 +2506,31 @@ input, select, textarea {
     }
    
 }
+
+
+/* Animations */
+
+.overflow-hiden {
+	overflow: hidden;
+}
+
+.discord-animation {
+	color: var(--primary-purple);
+	animation-duration: 1s;
+	position: absolute;
+	animation-name: slidein;
+	transition: all 200ms ease-in;
+}
+
+@keyframes slidein {
+	from {
+		opacity: .5;
+		transform: translateX(-50%);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0)
+	}
+}
+
+
