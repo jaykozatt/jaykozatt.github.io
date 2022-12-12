@@ -2355,6 +2355,10 @@ input, select, textarea {
 	font-weight: 500;
   }
 
+  .btn-slider {
+	  padding: .5rem;
+  }
+
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: -4%;
     right: auto;
@@ -2474,6 +2478,7 @@ input, select, textarea {
 .thumbnails {
     display: flex;
     gap: .5em;
+	padding-bottom: .5rem;
 }
 
 .thumbnails img {
