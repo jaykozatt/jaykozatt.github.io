@@ -1981,7 +1981,7 @@ input, select, textarea {
 
 			#main > .panel.intro {
 				padding: 0;
-				height: 20em;
+				height: 22em;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -2252,6 +2252,14 @@ input, select, textarea {
 	margin-left: 1rem;
 }
 
+.mb-1 {
+	margin-bottom: .5rem;
+}
+
+.mb-2 {
+	margin-bottom: 1rem;
+}
+
 .link-t {
 	transition: all 0.3s ease;
 }
@@ -2427,6 +2435,14 @@ input, select, textarea {
     display: block;
 }
 
+.inline-block {
+	display: inline-block;
+}
+
+.margin-auto {
+	margin: auto;
+}
+
 .upperCase {
     text-transform: uppercase;
 }
@@ -2534,3 +2550,8 @@ input, select, textarea {
 }
 
 
+/* Mira que la espacifidad  XD*/
+
+#main > .panel.intro header p {
+    margin-bottom: .5rem;
+}
