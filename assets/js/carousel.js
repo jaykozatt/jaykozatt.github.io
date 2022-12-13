@@ -57,6 +57,8 @@ const reviews = [
 				'3.1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea',
 				'3.2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium',
 				'3.3 Lorem ipsum dolor sit amet consectetur adipisicing elit.  qui maxime accusantium',
+				'3.4 Lorem ipsum dolor sit amet consectetur adipisicing elit.  qui maxime accusantium',
+				'3.5 Lorem ipsum dolor sit amet consectetur adipisicing elit.  qui maxime accusantium',
 			],
 		},
 	},
@@ -84,42 +86,27 @@ const reviews = [
 const imgUser = document.querySelector('.img-user'),
 	userText = document.querySelector('.user-text'),
 	proyectTitleTag = document.querySelector('.proyect-title'),
-	thumbnails = document.querySelector('.thumbnails');
+	thumbnails = document.querySelector('.thumbnails'),
+	card = document.querySelectorAll('.card');
 
 const prevBtn = document.querySelector('.row-left'),
 	nextBtn = document.querySelector('.row-right');
 
-let curretImg = 0;
-let currentText = 0;
+let currentItem = 0;
 let currentReview = 0;
-let currentTitle = 0;
-let review;
-let thumbArr;
-let thumbtArrText;
-let thumbArrImg;
-let titleArr;
 
 const changeInfo = (e) => {
 	imgUser.src = e.target.src;
 	userText.textContent = e.target.dataset.description;
 	proyectTitleTag.textContent = e.target.dataset.title;
-	curretImg = e.target.dataset.count;
-	currentText = e.target.dataset.count;
-	currentTitle = e.target.dataset.count;
+	currentItem = e.target.dataset.count;
 };
 
 const reviewsContent = (currentReview = 0) => {
-	review = reviews[currentReview];
-	thumbArr = review.thumb;
-	thumbtArrText = thumbArr.descriptions;
-	thumbArrImg = thumbArr.thumbImg;
-	titleArr = review.proyectTitle;
-
-	// currentReview = currentReview;
-	// review = reviews[currentReview];
-	const textActivated = thumbtArrText[currentText];
-	const imgActived = thumbArrImg[curretImg];
-	const titleActive = titleArr[currentTitle];
+	const review = reviews[currentReview],
+		textActivated = review.thumb.descriptions[currentItem],
+		imgActived = review.thumb.thumbImg[currentItem],
+		titleActive = review.proyectTitle[currentItem];
 
 	imgUser.src = imgActived;
 	userText.textContent = textActivated;
@@ -145,23 +132,17 @@ const thumbImgGenerator = (review) => {
 	});
 };
 
+console.log(reviews.length);
+
 const next = () => {
-	curretImg++;
-	currentText++;
-	currentTitle++;
-	if (curretImg > thumbArrImg.length - 1) curretImg = 0;
-	if (currentText > thumbtArrText.length - 1) currentText = 0;
-	if (currentTitle > titleArr.length - 1) currentTitle = 0;
+	currentItem++;
+	if (currentItem > card.length - 1) currentItem = 0;
 	reviewsContent(currentReview);
 };
 
 const prev = () => {
-	curretImg--;
-	currentText--;
-	currentTitle--;
-	if (curretImg < 0) curretImg = thumbArrImg.length - 1;
-	if (currentText < 0) currentText = thumbtArrText.length - 1;
-	if (currentTitle < 0) currentTitle = thumbtArrText.length - 1;
+	currentItem--;
+	if (currentItem < 0) currentItem = card.length - 1;
 	reviewsContent(currentReview);
 };
 
@@ -204,6 +185,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		if (target.dataset.order == 2) currentReview = 1;
 		if (target.dataset.order == 3) currentReview = 2;
 		carouselContainer.style.display = 'block';
+
+		currentItem = 0;
+
 		reviewsContent(currentReview);
 	};
 
