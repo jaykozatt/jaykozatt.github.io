@@ -181,9 +181,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		if (currentHash !== '#' + carouselContainer.id) {
 			return (carouselContainer.style.display = 'none');
 		}
-		if (target.dataset.order == 1) currentReview = 0;
-		if (target.dataset.order == 2) currentReview = 1;
-		if (target.dataset.order == 3) currentReview = 2;
+		currentReview = target.dataset.order - 1;
+
 		carouselContainer.style.display = 'block';
 
 		currentItem = 0;
