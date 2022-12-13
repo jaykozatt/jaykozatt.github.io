@@ -1434,7 +1434,7 @@ input, select, textarea {
 		clear: both;
 	}
 
-	p, ul, ol, dl, table, blockquote, form {
+	ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
 	}
 
@@ -2228,101 +2228,309 @@ input, select, textarea {
 	}
 
 
-	.slider-container {
-		position: relative;
-		width: 100%+5em;
-		min-height: 500px;
-		margin: 0em -2.5em;
-		padding: 0% 5%;
-	}
-	
-	.slider {
-		display: flex;
-		flex-direction: row;
-		width: 133%;
-		transition: transform .4s ease-in-out;
-	}
 
-	@media screen and (max-width: 1680px) {
-		.slider {
-			width: 200%;
-		}
-	}
+/* mvbri's code */
 
-	@media screen and (max-width: 968px) {
-		.slider {
-			width: 400%;
-		}
-	}
+:root {
+	--primary-purple : rgb(46, 21, 80);
+	--link-color : rgb(54, 54, 54);
+	--link-color-hover : var(--primary-purple);
+	--button-hover : rgb(83, 40, 143);
+}
 
-	.card {
-		width: 100%;
-		margin: 0 .5em;
-		border: 1px solid;
-		border-radius: 1em;
-		overflow: hidden;
-		z-index: 9;
-	}
+/* Clases utilitarias */
 
-	.card img {
-		object-fit: cover;
-		width: 100%;
-		aspect-ratio: 16 / 9;
-	}
+.p-relative {
+	position: relative;
+}
 
-	.card-description {
-		padding: 1.2em;
-		/* overflow-y: scroll; */
-	}
+.ml-1 {
+	margin-left: .5rem;
+}
 
-		.card-description h3 {
-			font-weight: bold;
-		}
-	
-	#prevButton, #nextButton {
-		position: absolute;
-		z-index: 10;
+.ml-2 {
+	margin-left: 1rem;
+}
+
+.link-t {
+	transition: all 0.3s ease;
+}
+
+.link-color {
+	color: var(--link-color);
+}
+
+.link-color-hover:hover {
+	color: var(--link-color-hover);
+}
+
+.no-decoration {
+	text-decoration: none;
+}
+
+/* slider */
+
+  .swiper-pagination .swiper-pagination-bullet {
+	height: 7px;
+	width: 26px;
+	border-radius: 25px;
+	background-color: var(--primary-purple);
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+	opacity: 0.4;
+	color: var(--primary-purple);
+  }
+  
+  .swiper-button-next:hover::after,
+  .swiper-button-prev:hover::after {
+	opacity: 1;
+  }
+  
+  .card {
+	position: relative;
+	background-color: #fff;
+	border-radius: 20px;
+	margin: 20px 0;
+  }
+  
+  .card::before {
+	content: "";
+	position: absolute;
+	height: 40%;
+	width: 100%;
+	background-color: var(--primary-purple);
+	border-radius: 20px 20px 0 0;
+  }
+  
+  .image-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 16/9;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+  }
+  
+  .card-content {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 100;
+  }
+  
+  .media-icons {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .media-icons i {
+	color: #fff;
+	opacity: 0.6;
+	margin-top: 10px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+  }
+  
+  .media-icons i:hover {
+	opacity: 1;
+  }
+  
+  .name-profession {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	color: #333;
+  }
+  
+  .name {
+	font-size: 20px;
+	font-weight: 600;
+  }
+  
+  .profession {
+	font-size: 15px;
+	font-weight: 500;
+  }
+
+  .btn-slider {
+	  padding: .5rem;
+  }
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: -4%;
+    right: auto;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: -4%;
+    left: auto;
+}
+  
+  .buttons {
+	width: 100%;
+	display: flex;
+	gap: 0.5em;
+	margin-top: 20px;
+  }
+  
+  .buttons a {
+	background-color: var(--primary-purple);
+	outline: none;
+	border: none;
+	color: #fff;
+	padding:  0 1rem;
+	font-size: 14px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 400;
+  }
+  
+  .buttons a:hover {
+	background-color: var(--button-hover);
+  }
+  
+/* Carousel 2*/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 1rem;
+}
+
+.container-reviews {
+    display: flex;
+}
+
+.continer-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.btn-sliders {
+	margin-bottom: .5rem;
+}
+
+.block {
+    display: block;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-little {
+    font-size: var(--font-little);
+}
+
+.secondary-text {
+    line-height: 31px;
+}
+
+.img-container {
+	width: 100%;
+}
+
+.line::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: var(--blue-primary);
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+}
+
+.icon-keyboard_arrow_left,
+.icon-keyboard_arrow_right {
+    color: var(--blue-primary);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.main-btn {
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: var(--font-little);
+    color: var(--blue-primary);
+    border: 2px solid var(--blue-primary);
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    color: #fff;
+    background-color: var(--blue-primary);
+}
+
+.thumbnails {
+    display: flex;
+    gap: .5em;
+	padding-bottom: .5rem;
+}
+
+.thumbnails img {
+    width: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media (min-width: 576px) { 
+    .continer-card{
+        padding: 2em 2em 1em 2em;
+        margin: auto;
+    }
+
+    .img-user {
+        width: 100%;
 		height: 100%;
-		width: 10%;
+		object-fit: cover;
+    	aspect-ratio: 16/9;
+    }
+   
+}
+
+
+/* Animations */
+
+.overflow-hiden {
+	overflow: hidden;
+}
+
+.discord-animation {
+	color: var(--primary-purple);
+	animation-duration: 1s;
+	position: absolute;
+	animation-name: slidein;
+	transition: all 200ms ease-in;
+}
+
+@keyframes slidein {
+	from {
+		opacity: .5;
+		transform: translateX(-50%);
 	}
-	
-		#prevButton {
-			left: 0%;
-			background-image: linear-gradient(to right, white, rgba(0, 0, 0, 0));
-		}
-		
-		#nextButton {
-			right: 0%;
-			background-image: linear-gradient(to left, white, rgba(0, 0, 0, 0));
-		}
-	
-		#prevButton i, #nextButton i {
-			position: absolute;
-			top: 40%;
-			z-index: inherit;
-			font-size: 30px;
-			text-align: center;
-			padding: 5px;
-			color: white;
-			opacity: 0.9;
-			background-color: black;
-			width: 40px;
-			height: 40px;
-			border-radius: 50%;
-			cursor: pointer;
-		}
+	to {
+		opacity: 1;
+		transform: translateX(0)
+	}
+}
 
-			#prevButton i {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				left: 15%;
-			}
 
-			#nextButton i {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				right: 15%;
-			}
-	
