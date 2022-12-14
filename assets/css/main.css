@@ -2261,6 +2261,7 @@ input, select, textarea {
 		background-color: rgb(117, 68, 186);
 	}
 
+	
 /* mvbri's code */
 
 :root {
@@ -2293,7 +2294,7 @@ input, select, textarea {
 }
 
 .link-color-hover:hover {
-	color: var(--link-color-hover);
+	color: rgb(117, 68, 186);
 }
 
 .no-decoration {
