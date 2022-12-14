@@ -5,6 +5,7 @@ const reviews = [
 		id: 1,
 		img: 'images/test.png',
 		projectLink:"https://jaykozatt.itch.io/the-prisoner",
+		projectSrc:"https://github.com/AN-Studio/Brackeys-Game-Jam-2022",
 		proyectTitle: [
 			'1. Inception',
 			'2. The Team',
@@ -31,6 +32,7 @@ const reviews = [
 		id: 2,
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
 		projectLink:"https://jaykozatt.itch.io/all-bets-are-off",
+		projectSrc: "https://github.com/jaykozatt/AllBetsAreOff",
 		proyectTitle: [
 			'1. Inception',
 			'2. The Team',
@@ -137,6 +139,7 @@ const reviews = [
 		id: 3,
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
 		projectLink: "https://drive.google.com/file/d/1-xBybK2vGnGGrcAiZskuFoJIYc-Cl_Ye/view?usp=sharing",
+		projectSrc: "",
 		proyectTitle: [
 			'1. Inception',
 			'2. The Team',
@@ -162,7 +165,8 @@ const imgUser = document.querySelector('.img-user'),
 	userText = document.querySelector('.user-text'),
 	proyectTitleTag = document.querySelector('.proyect-title'),
 	thumbnails = document.querySelector('.thumbnails'),
-	projectLink = document.querySelector('.project-link');
+	projectLink = document.querySelector('.project-link'),
+	projectSrc = document.querySelector('.project-src');
 
 const prevBtn = document.querySelector('.row-left'),
 	nextBtn = document.querySelector('.row-right');
@@ -177,6 +181,7 @@ let thumbtArrText;
 let thumbArrImg;
 let titleArr;
 let currentLink;
+let currentProjectSrc;
 
 const changeInfo = (e) => {
 	imgUser.src = e.target.src;
@@ -194,6 +199,7 @@ const reviewsContent = (currentReview = 0) => {
 	thumbArrImg = thumbArr.thumbImg;
 	titleArr = review.proyectTitle;
 	currentLink = review.projectLink;
+	currentProjectSrc = review.projectSrc;
 
 	// currentReview = currentReview;
 	// review = reviews[currentReview];
@@ -205,16 +211,18 @@ const reviewsContent = (currentReview = 0) => {
 	userText.textContent = textActivated;
 	proyectTitleTag.textContent = titleActive;
 	projectLink.href = currentLink;
+	projectSrc.href = currentProjectSrc;
 	// console.log(currentLink);
 
 	if (currentLink === "")
-	{
 		projectLink.style.display = 'none';
-	}
 	else
-	{
 		projectLink.style.display = 'block';
-	}
+
+	if (currentProjectSrc === "")
+		projectSrc.style.display = 'none';
+	else
+		projectSrc.style.display = 'block';
 
 	// thumbImgGenerator(review);
 };
@@ -244,7 +252,7 @@ const next = () => {
 	if (curretImg > thumbArrImg.length - 1) curretImg = 0;
 	if (currentText > thumbtArrText.length - 1) currentText = 0;
 	if (currentTitle > titleArr.length - 1) currentTitle = 0;
-	imgUser.scrollIntoView(true);
+	// imgUser.scrollIntoView(true);
 	reviewsContent(currentReview);
 };
 
@@ -255,7 +263,7 @@ const prev = () => {
 	if (curretImg < 0) curretImg = thumbArrImg.length - 1;
 	if (currentText < 0) currentText = thumbtArrText.length - 1;
 	if (currentTitle < 0) currentTitle = thumbtArrText.length - 1;
-	imgUser.scrollIntoView(true);
+	// imgUser.scrollIntoView(true);
 	reviewsContent(currentReview);
 };
 

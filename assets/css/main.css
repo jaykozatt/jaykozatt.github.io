@@ -2261,6 +2261,10 @@ input, select, textarea {
 		background-color: rgb(117, 68, 186);
 	}
 
+	button {
+		font-size: large;
+	}
+
 	
 /* mvbri's code */
 
