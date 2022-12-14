@@ -21,10 +21,10 @@ const reviews = [
 				'assets/css/images/slideshow/the-prisioner-1.3.png',
 			],
 			descriptions: [
-				"Section being written at the moment...",
-				"Section being written at the moment...",
-				"Section being written at the moment...",
-				"Section being written at the moment...",
+				"SORRYYYYY! (T-T) This section is under construction...",
+				"SORRYYYYY! (T-T) This section is under construction...",
+				"SORRYYYYY! (T-T) This section is under construction...",
+				"SORRYYYYY! (T-T) This section is under construction...",
 			],
 		},
 	},
@@ -153,9 +153,10 @@ const reviews = [
 				'assets/css/images/slideshow/rogue-assembly-2.png',
 			],
 			descriptions: [
-				"This game remains currently UNRELEASED. Also... this section is being written at the moment...",
-				"Section being written at the moment...",
-				"Section being written at the moment...",
+				"This game remains currently UNRELEASED because it didn't make it to the deadline of the "+
+				"Wowie Game Jam 2022. Also... SORRYYYYY! (T-T) This section is under construction...",
+				"SORRYYYYY! (T-T) This section is under construction...",
+				"SORRYYYYY! (T-T) This section is under construction...",
 			],
 		},
 	},
