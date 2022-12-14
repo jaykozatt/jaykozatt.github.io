@@ -136,7 +136,7 @@ const reviews = [
 	{
 		id: 3,
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
-		projectLink: "",
+		projectLink: "https://drive.google.com/file/d/1-xBybK2vGnGGrcAiZskuFoJIYc-Cl_Ye/view?usp=sharing",
 		proyectTitle: [
 			'1. Inception',
 			'2. The Team',
@@ -205,7 +205,18 @@ const reviewsContent = (currentReview = 0) => {
 	userText.textContent = textActivated;
 	proyectTitleTag.textContent = titleActive;
 	projectLink.href = currentLink;
-	thumbImgGenerator(review);
+	// console.log(currentLink);
+
+	if (currentLink === "")
+	{
+		projectLink.style.display = 'none';
+	}
+	else
+	{
+		projectLink.style.display = 'block';
+	}
+
+	// thumbImgGenerator(review);
 };
 
 const thumbImgGenerator = (review) => {
@@ -233,6 +244,7 @@ const next = () => {
 	if (curretImg > thumbArrImg.length - 1) curretImg = 0;
 	if (currentText > thumbtArrText.length - 1) currentText = 0;
 	if (currentTitle > titleArr.length - 1) currentTitle = 0;
+	imgUser.scrollIntoView(true);
 	reviewsContent(currentReview);
 };
 
@@ -243,6 +255,7 @@ const prev = () => {
 	if (curretImg < 0) curretImg = thumbArrImg.length - 1;
 	if (currentText < 0) currentText = thumbtArrText.length - 1;
 	if (currentTitle < 0) currentTitle = thumbtArrText.length - 1;
+	imgUser.scrollIntoView(true);
 	reviewsContent(currentReview);
 };
 
@@ -285,6 +298,12 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		if (target.dataset.order == 2) currentReview = 1;
 		if (target.dataset.order == 3) currentReview = 2;
 		carouselContainer.style.display = 'block';
+		imgUser.scrollIntoView(true);
+		
+		currentTitle = 0;
+		curretImg = 0;
+		currentText = 0;
+
 		reviewsContent(currentReview);
 	};
 
