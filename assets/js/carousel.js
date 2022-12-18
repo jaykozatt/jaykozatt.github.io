@@ -95,13 +95,6 @@ const prevBtn = document.querySelector('.row-left'),
 let currentItem = 0;
 let currentReview = 0;
 
-const changeInfo = (e) => {
-	imgUser.src = e.target.src;
-	userText.textContent = e.target.dataset.description;
-	proyectTitleTag.textContent = e.target.dataset.title;
-	currentItem = e.target.dataset.count;
-};
-
 const reviewsContent = (currentReview = 0) => {
 	const review = reviews[currentReview],
 		textActivated = review.thumb.descriptions[currentItem],
@@ -112,6 +105,13 @@ const reviewsContent = (currentReview = 0) => {
 	userText.textContent = textActivated;
 	proyectTitleTag.textContent = titleActive;
 	thumbImgGenerator(review);
+};
+
+const changeInfo = (e) => {
+	imgUser.src = e.target.src;
+	userText.textContent = e.target.dataset.description;
+	proyectTitleTag.textContent = e.target.dataset.title;
+	currentItem = e.target.dataset.count;
 };
 
 const thumbImgGenerator = (review) => {
@@ -132,45 +132,8 @@ const thumbImgGenerator = (review) => {
 	});
 };
 
-console.log(reviews.length);
-
-const next = () => {
-	currentItem++;
-	if (currentItem > card.length - 1) currentItem = 0;
-	reviewsContent(currentReview);
-};
-
-const prev = () => {
-	currentItem--;
-	if (currentItem < 0) currentItem = card.length - 1;
-	reviewsContent(currentReview);
-};
-
-nextBtn.addEventListener('click', next);
-prevBtn.addEventListener('click', prev);
-
-window.addEventListener('DOMContentLoaded', () => {
-	reviewsContent();
-});
-
 const carouselContainer = document.querySelector('.carousel-container');
 const btnRead = document.querySelectorAll('.btn-read');
-
-document.addEventListener('DOMContentLoaded', (e) => {
-	var swiper = new Swiper('.mySwiper', {
-		slidesPerView: 2,
-		spaceBetween: 30,
-		slidesPerGroup: 2,
-		loop: true,
-		loopFillGroupWithBlank: true,
-		pagination: false,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-	});
-});
-
 document.addEventListener('DOMContentLoaded', (e) => {
 	carouselContainer.style.display = 'none';
 
@@ -191,4 +154,34 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	};
 
 	$(btnRead).click(e, showCarousel);
+});
+
+const next = () => {
+	currentItem++;
+	if (currentItem > card.length - 1) currentItem = 0;
+	reviewsContent(currentReview);
+};
+
+const prev = () => {
+	currentItem--;
+	if (currentItem < 0) currentItem = card.length - 1;
+	reviewsContent(currentReview);
+};
+
+nextBtn.addEventListener('click', next);
+prevBtn.addEventListener('click', prev);
+
+document.addEventListener('DOMContentLoaded', (e) => {
+	var swiper = new Swiper('.mySwiper', {
+		slidesPerView: 2,
+		spaceBetween: 30,
+		slidesPerGroup: 2,
+		loop: true,
+		loopFillGroupWithBlank: true,
+		pagination: false,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
 });
