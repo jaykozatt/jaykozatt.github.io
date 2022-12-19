@@ -90,9 +90,16 @@ prevBtn.addEventListener('click', prev);
 
 document.addEventListener('DOMContentLoaded', (e) => {
 	var swiper = new Swiper('.mySwiper', {
-		slidesPerView: 2,
+		slidesPerView: 1,
 		spaceBetween: 30,
-		slidesPerGroup: 2,
+		slidesPerGroup: 1,
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				slidesPerGroup: 2,
+			},
+		},
 		loop: true,
 		loopFillGroupWithBlank: true,
 		pagination: false,
