@@ -1,6 +1,6 @@
 import { reviews } from './modules/data.js';
 
-const imgUser = document.querySelector('.img-user'),
+const imgUser = document.querySelector('.img-card'),
 	userText = document.querySelector('.user-text'),
 	proyectTitleTag = document.querySelector('.proyect-title'),
 	thumbnails = document.querySelector('.thumbnails'),
