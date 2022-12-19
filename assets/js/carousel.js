@@ -16,9 +16,9 @@ let currentReview = 0;
 
 const reviewsContent = (currentReview = 0) => {
 	const review = reviews[currentReview],
-		textActivated = review.thumb.descriptions[currentItem],
-		imgActived = review.thumb.thumbImg[currentItem],
-		titleActive = review.proyectTitle[currentItem],
+		textActivated = review.slides.descriptions[currentItem],
+		imgActived = review.slides.thumbImg[currentItem],
+		titleActive = review.slides.proyectTitle[currentItem],
 		linkActive = review.projectLink,
 		sourceActive = review.projectSrc;
 
@@ -28,12 +28,12 @@ const reviewsContent = (currentReview = 0) => {
 	projectLink.href = linkActive;
 	projectSrc.href = sourceActive;
 
-	if (currentLink === "")
+	if (linkActive === "")
 		projectLink.style.display = 'none';
 	else
 		projectLink.style.display = 'block';
 
-	if (currentProjectSrc === "")
+	if (sourceActive === "")
 		projectSrc.style.display = 'none';
 	else
 		projectSrc.style.display = 'block';
@@ -52,13 +52,13 @@ const thumbImgGenerator = (review) => {
 	let count = 0;
 	thumbnails.innerHTML = ' ';
 
-	review.thumb.thumbImg.forEach((thumbI) => {
+	review.slides.thumbImg.forEach((thumbI) => {
 		count++;
 		let thumbImg = document.createElement('img');
 		thumbImg.classList.add('thumbnails-img');
 		thumbImg.src = thumbI;
 		thumbImg.dataset.title = review.proyectTitle[count - 1];
-		thumbImg.dataset.description = review.thumb.descriptions[count - 1];
+		thumbImg.dataset.description = review.slides.descriptions[count - 1];
 		thumbImg.dataset.count = count - 1;
 
 		thumbImg.addEventListener('click', changeInfo);
@@ -93,14 +93,15 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 const next = () => {
 	currentItem++;
-	if (currentItem > card.length - 1) currentItem = 0;
-	// imgUser.scrollIntoView(true);
+	let slideCount = reviews[currentReview].slides.proyectTitle.length - 1;
+	if (currentItem > slideCount) currentItem = 0;
 	reviewsContent(currentReview);
 };
 
 const prev = () => {
 	currentItem--;
-	if (currentItem < 0) currentItem = card.length - 1;
+	let slideCount = reviews[currentReview].slides.proyectTitle.length - 1;
+	if (currentItem < 0) currentItem = slideCount;
 	reviewsContent(currentReview);
 };
 

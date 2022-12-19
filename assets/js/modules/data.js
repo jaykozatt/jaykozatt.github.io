@@ -6,14 +6,14 @@ export const reviews = [
 		img: 'images/test.png',
 		projectLink:"https://jaykozatt.itch.io/the-prisoner",
 		projectSrc:"https://github.com/AN-Studio/Brackeys-Game-Jam-2022",
-		proyectTitle: [
-			'1. Inception',
-			'2. The Team',
-			"3.1. The Design Challenge",
-			"3.2. Our First Ideas",
-		],
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. D',
-		thumb: {
+		slides: {
+			proyectTitle: [
+				'1. Inception',
+				'2. The Team',
+				"3.1. The Design Challenge",
+				"3.2. Our First Ideas",
+			],
 			thumbImg: [
 				'assets/css/images/cover-img/the-prisoner.png',
 				'assets/css/images/slideshow/the-prisioner-1.1.png',
@@ -33,21 +33,21 @@ export const reviews = [
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
 		projectLink:"https://jaykozatt.itch.io/all-bets-are-off",
 		projectSrc: "https://github.com/jaykozatt/AllBetsAreOff",
-		proyectTitle: [
-			'1. Inception',
-			'2. The Team',
-			"3.1. The Design Challenge",
-			"3.2. Our First Ideas",
-			"3.3. We've got a Winner!",
-			'4. Introducing our tools',
-			'5.1. Our Workflow Plan',
-			"5.2. Our Workflow's Results",
-			'6. The Game Jam Results',
-			'7. Lessons and Takeaways',
-			'8. The Game TODAY'
-		],
 		text: 'All Bets Are Off! is a deathmatch arena in which you slice and dice poker chip stacks by means of entangling them with a chain mace in the shape of a die, giving a new meaning to the phrase "rolling dice".',
-		thumb: {
+		slides: {
+			proyectTitle: [
+				'1. Inception',
+				'2. The Team',
+				"3.1. The Design Challenge",
+				"3.2. Our First Ideas",
+				"3.3. We've got a Winner!",
+				'4. Introducing our tools',
+				'5.1. Our Workflow Plan',
+				"5.2. Our Workflow's Results",
+				'6. The Game Jam Results',
+				'7. Lessons and Takeaways',
+				'8. The Game TODAY'
+			],
 			thumbImg: [
 				'assets/css/images/cover-img/all-bets-are-off.png',
 				'assets/css/images/slideshow/my-triad.png',
@@ -140,13 +140,13 @@ export const reviews = [
 		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
 		projectLink: "https://drive.google.com/file/d/1-xBybK2vGnGGrcAiZskuFoJIYc-Cl_Ye/view?usp=sharing",
 		projectSrc: "",
-		proyectTitle: [
-			'1. Inception',
-			'2. The Team',
-			"3.1. The Design Challenge",
-		],
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium deleniti consectetur iustoveniam hic, voluptates quasi iure quos porro laborum, inventoreprovident?',
-		thumb: {
+		slides: {
+			proyectTitle: [
+				'1. Inception',
+				'2. The Team',
+				"3.1. The Design Challenge",
+			],
 			thumbImg: [
 				'assets/css/images/cover-img/rogue-assembly.png',
 				'assets/css/images/slideshow/rogue-assembly-1.png',
