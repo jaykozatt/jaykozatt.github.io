@@ -2227,8 +2227,45 @@ input, select, textarea {
 		display: none;
 	}
 
+	h3.name {
+		font-weight: bold;
+		color: #333;
+	}
 
+	p.proyect-description {
+		font-weight: 400;
+		color: #777777;
+	}
 
+	h3.proyect-title {
+		font-weight: bold;
+		color: #333;
+	}
+
+	p.user-text {
+		font-weight: 400;
+		color:#777777;
+	}
+
+	p.footnote {
+		opacity: 60%;
+		font-weight: bolder;
+	}
+
+	.call-to-action {
+		background-color: rgb(83, 40, 143);
+		font-size: large;
+	}
+
+	.call-to-action:hover {
+		background-color: rgb(117, 68, 186);
+	}
+
+	button {
+		font-size: large;
+	}
+
+	
 /* mvbri's code */
 
 :root {
@@ -2269,7 +2306,7 @@ input, select, textarea {
 }
 
 .link-color-hover:hover {
-	color: var(--link-color-hover);
+	color: rgb(117, 68, 186);
 }
 
 .no-decoration {

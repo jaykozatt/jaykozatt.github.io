@@ -4,6 +4,8 @@ const imgUser = document.querySelector('.img-card'),
 	userText = document.querySelector('.user-text'),
 	proyectTitleTag = document.querySelector('.proyect-title'),
 	thumbnails = document.querySelector('.thumbnails'),
+	projectLink = document.querySelector('.project-link'),
+	projectSrc = document.querySelector('.project-src'),
 	card = document.querySelectorAll('.card');
 
 const prevBtn = document.querySelector('.row-left'),
@@ -16,12 +18,27 @@ const reviewsContent = (currentReview = 0) => {
 	const review = reviews[currentReview],
 		textActivated = review.thumb.descriptions[currentItem],
 		imgActived = review.thumb.thumbImg[currentItem],
-		titleActive = review.proyectTitle[currentItem];
+		titleActive = review.proyectTitle[currentItem],
+		linkActive = review.projectLink,
+		sourceActive = review.projectSrc;
 
 	imgUser.src = imgActived;
 	userText.textContent = textActivated;
 	proyectTitleTag.textContent = titleActive;
-	thumbImgGenerator(review);
+	projectLink.href = linkActive;
+	projectSrc.href = sourceActive;
+
+	if (currentLink === "")
+		projectLink.style.display = 'none';
+	else
+		projectLink.style.display = 'block';
+
+	if (currentProjectSrc === "")
+		projectSrc.style.display = 'none';
+	else
+		projectSrc.style.display = 'block';
+
+	// thumbImgGenerator(review);
 };
 
 const changeInfo = (e) => {
@@ -66,6 +83,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		carouselContainer.style.display = 'block';
 
 		currentItem = 0;
+		imgUser.scrollIntoView(true);
 
 		reviewsContent(currentReview);
 	};
@@ -76,6 +94,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 const next = () => {
 	currentItem++;
 	if (currentItem > card.length - 1) currentItem = 0;
+	// imgUser.scrollIntoView(true);
 	reviewsContent(currentReview);
 };
 
