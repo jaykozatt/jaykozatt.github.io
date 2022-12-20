@@ -83,7 +83,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		carouselContainer.style.display = 'block';
 
 		currentItem = 0;
-		prevBtn.style.opacity = '25%';
 		prevBtn.classList.add("disabled");
 		imgUser.scrollIntoView(true);
 
