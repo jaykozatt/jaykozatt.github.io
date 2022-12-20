@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		carouselContainer.style.display = 'block';
 
 		currentItem = 0;
+		prevBtn.style.opacity = '25%';
+		prevBtn.classList.add("disabled");
 		imgUser.scrollIntoView(true);
 
 		reviewsContent(currentReview);
@@ -92,18 +94,33 @@ document.addEventListener('DOMContentLoaded', (e) => {
 });
 
 const next = () => {
-	currentItem++;
 	let slideCount = reviews[currentReview].slides.proyectTitle.length - 1;
-	if (currentItem > slideCount) currentItem = 0;
-	reviewsContent(currentReview);
+	if (currentItem+1 <= slideCount)
+	{
+		currentItem++;
+		checkItemState();
+		reviewsContent(currentReview);
+	}
 };
 
 const prev = () => {
-	currentItem--;
-	let slideCount = reviews[currentReview].slides.proyectTitle.length - 1;
-	if (currentItem < 0) currentItem = slideCount;
-	reviewsContent(currentReview);
+	if (currentItem-1 >= 0)
+	{
+		currentItem--;
+		checkItemState();
+		reviewsContent(currentReview);
+	}
 };
+
+const checkItemState = () => {
+	let slideCount = reviews[currentReview].slides.proyectTitle.length - 1;
+	
+	if (currentItem-1 < 0) prevBtn.classList.add("disabled");
+	else prevBtn.classList.remove("disabled");
+
+	if (currentItem+1 > slideCount) nextBtn.classList.add("disabled");
+	else nextBtn.classList.remove("disabled");
+}
 
 nextBtn.addEventListener('click', next);
 prevBtn.addEventListener('click', prev);
