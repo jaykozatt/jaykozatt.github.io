@@ -2251,16 +2251,27 @@ input, select, textarea {
 
 	.call-to-action {
 		background-color: rgb(83, 40, 143);
-		font-size: large;
+		font-size: small;
 	}
+
 	
 	.call-to-action:hover {
 		background-color: rgb(117, 68, 186);
 	}
 	
 	button {
-		font-size: large;
+		font-size: small;
 		border-radius: 0.5em;
+	}
+
+	@media screen and (min-width:768px) {
+		.call-to-action {
+			font-size: large;
+		}
+		button {
+			font-size: large;
+			border-radius: 0.5em;
+		}	
 	}
 
 	.btn-read {
@@ -2708,6 +2719,10 @@ input, select, textarea {
    
 }
 
+.contact-info {
+	position: relative;
+	left: 1em;
+}
 
 /* Animations */
 
@@ -2715,10 +2730,10 @@ input, select, textarea {
 	overflow: hidden;
 }
 
-.discord-animation {
+.slidein-animation {
 	color: var(--primary-purple);
 	animation-duration: 1s;
-	position: absolute;
+	position: relative;
 	animation-name: slidein;
 	transition: all 200ms ease-in;
 }
