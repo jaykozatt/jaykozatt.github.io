@@ -2,7 +2,7 @@ import { reviews } from './modules/data.js';
 
 const imgUser = document.querySelector('.img-card'),
 	userText = document.querySelector('.user-text'),
-	proyectTitleTag = document.querySelector('.proyect-title'),
+	proyectTitleTag = document.querySelector('.project-title'),
 	thumbnails = document.querySelector('.thumbnails'),
 	projectLink = document.querySelector('.project-link'),
 	projectSrc = document.querySelector('.project-src'),
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			768: {
 				slidesPerView: 2,
 				spaceBetween: 20,
-				slidesPerGroup: 2,
+				slidesPerGroup: 1,
 			},
 		},
 		loop: true,

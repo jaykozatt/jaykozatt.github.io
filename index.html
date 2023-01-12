@@ -116,7 +116,11 @@
 								<div class="content swiper-wrapper">
 
 									<div class="card swiper-slide">
-										<div class="card-content">
+										<div class="card-container">
+											<div class="card-title">
+												<h4 class="name ml-2">All Bets Are Off! </h4>
+											</div>
+
 											<div class="image-card">
 												<img
 													src="./assets/css/images/cover-img/all-bets-are-off.png"
@@ -124,30 +128,33 @@
 												/>
 											</div>
 
+											<div class="card-type">
+												<h4 class="name ml-2">Casual / Mobile</h4>
+											</div>
+
 											<div class="card-body">
-												<div class="name-profession">
-													<h3 class="name ml-2">All Bets Are Off! </h3>
-												</div>
-	
-												<p class="proyect-description ml-2">
+												<p class="project-description">
 													All Bets Are Off! is a deathmatch arena in which you
 													face off against stacks of poker chips, with your trusty
 													chain-mace shaped like a die. Unleash a maelstrom of roulette balls, 
 													and show those chips who's boss!
-												</p>
-	
-												<div class="buttons ml-2">
-													<a data-order="2" class="btn-read" href="#carousel">
-														READ MORE
-													</a>
-												</div>
+												</p>	
+											</div>
 
+											<div class="buttons ml-2">
+												<a data-order="2" class="btn-read" href="#carousel">
+													READ MORE
+												</a>
 											</div>
 										</div>
 									</div>
 
 									<div class="card swiper-slide">
-										<div class="card-content">
+										<div class="card-container">
+											<div class="card-title">
+												<h4 class="name ml-2">The Prisoner: Dread or Trust</h4>
+											</div>
+
 											<div class="image-card">
 												<img
 													src="./assets/css/images/cover-img/the-prisoner.png"
@@ -155,29 +162,33 @@
 												/>
 											</div>
 
+											<div class="card-type">
+												<h4 class="name ml-2">Horror / 3D Visual Novel</h4>
+											</div>
+
 											<div class="card-body">
-												<div class="name-profession">
-													<h3 class="name ml-2">The Prisoner: Dread or Trust</h3>
-												</div>
-	
-												<p class="proyect-description ml-2">
+												<p class="project-description">
 													The Prisoner is a horror story that has you wake up
 													within a prison and forced to play a game of trust and
 													betrayal with another inmate. The winner shall decide
 													who gets to stay, and who gets to leave.
 												</p>
-	
-												<div class="buttons ml-2">
-													<a data-order="1" class="btn-read" href="#carousel">
-														READ MORE
-													</a>
-												</div>
+											</div>
+											
+											<div class="buttons ml-2">
+												<a data-order="1" class="btn-read" href="#carousel">
+													READ MORE
+												</a>
 											</div>
 										</div>
 									</div>
 
 									<div class="card swiper-slide">
-										<div class="card-content">
+										<div class="card-container">
+											<div class="card-title">
+												<h3 class="name ml-2">[WIP] Rogue Assembly</h3>
+											</div>
+
 											<div class="image-card">
 												<img
 													src="./assets/css/images/cover-img/rogue-assembly.png"
@@ -185,21 +196,21 @@
 												/>
 											</div>
 
+											<div class="card-type">
+												<h4 class="name ml-2">Puzzle / Adventure</h4>
+											</div>
+
 											<div class="card-body">
-												<div class="name-profession">
-													<h3 class="name ml-2">[WIP] Rogue Assembly</h3>
-												</div>
-	
-												<p class="proyect-description ml-2">
+												<p class="project-description">
 													A game of trust & deception in which you collaborate with 
 													AI to earn money and save your bedridden child.
 												</p>
-	
-												<div class="buttons ml-2">
-													<a data-order="3" class="btn-read" href="#carousel">
-														READ MORE
-													</a>
-												</div>
+											</div>
+
+											<div class="buttons ml-2">
+												<a data-order="3" class="btn-read" href="#carousel">
+													READ MORE
+												</a>
 											</div>
 										</div>
 									</div>
@@ -215,30 +226,37 @@
 							class="carousel-container carousel1 p-relative"
 						>
 							<hr />
-							<article class="continer-card">
-								<div>
-									<img class="img-card" src="" alt="" />
-								</div>
-								<!-- <div class="thumbnails"></div> -->
-
-								<h3 class="proyect-title"></h3>
-								<p class="user-text"></p>
-								<br>
-								<div class="btn-sliders pb-1 pt-1">
+							<article class="container-slide">
+								<div class="slide-media row aln-center">
 									<button class="row-left">
-										<i class="icon solid fa-arrow-left"></i>
+										<i class="icon solid fa-chevron-left fas center-icon"></i>
+										<!-- <p>&lt;</p> -->
 									</button>
+									
+									<div class="slide-image">
+										<img class="img-card" src="" alt="" />
+										<iframe class="slide-iframe"></iframe>
+									</div>
+									
 									<button class="row-right">
-										<i class="icon solid fa-arrow-right"></i>
-									</button>
+										<i class="icon solid fa-chevron-right fas center-icon"></i>
+									</button>	
 								</div>
+								
+								<!-- <div class="thumbnails"></div> -->
+								
+								<h3 class="project-title"></h3>
+								<p class="user-text"></p>
+								<!-- <br> -->
+								<!-- <div class="btn-sliders pb-1 pt-1">
+								</div> -->
 								<br>
 								<div class="row aln-center">
 									<a id="play" class="project-link btn-read" target="_blank">
 										<button class="call-to-action">PLAY IT HERE!</button>
 									</a>
 									<a id="source" class="project-src btn-read" target="_blank">
-										<button>SOURCE</button>
+										<button>SOURCE CODE</button>
 									</a>
 								</div>
 							</article>
@@ -249,7 +267,7 @@
 						<span class="icon solid fa-star"></span>
 						<span class="icon solid fa-star"></span>
 						<span class="icon solid fa-star"></span>
-							<b><i> Say: Jay to the Joy! </i></b>
+							<b><i> Say Jay to the Joy! </i></b>
 						<span class="icon solid fa-star"></span>
 						<span class="icon solid fa-star"></span>
 						<span class="icon solid fa-star"></span>
@@ -505,7 +523,7 @@
 							<span class="icon solid fa-star"></span>
 							<span class="icon solid fa-star"></span>
 							<span class="icon solid fa-star"></span>
-								<b><i> Say: Jay to the Joy! </i></b>
+								<b><i> Say Jay to the Joy! </i></b>
 							<span class="icon solid fa-star"></span>
 							<span class="icon solid fa-star"></span>
 							<span class="icon solid fa-star"></span>

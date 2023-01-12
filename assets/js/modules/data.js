@@ -62,7 +62,7 @@ export const reviews = [
 				'assets/css/images/slideshow/all-bets-today.png',
 			],
 			descriptions: [
-				"All Bets Are Off! came to be as a result of 2022's yearly game development marathon " +
+				"All Bets Are Off! came to be as a result of 2022's yearly gamedev marathon " +
 				"\"GMTK Game Jam\", which had \"Roll of the Dice\" as that year's theme.\n\n"+
 				"Each year, many events like this one are carried out, and teams from all over the world " +
 				"come together into a single online event to flex their game development muscles. "+
