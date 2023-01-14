@@ -1996,7 +1996,7 @@ input, select, textarea {
 				align-items: center;
 			}
 
-				#main > .panel.intro .pic {
+				/* #main > .panel.intro .pic {
 					text-decoration: none;
 					position: relative;
 					-moz-flex-grow: 0;
@@ -2009,9 +2009,9 @@ input, select, textarea {
 					flex-shrink: 0;
 					width: 17em;
 					height: 100%;
-				}
+				} */
 
-					#main > .panel.intro .pic:before {
+					/* #main > .panel.intro .pic:before {
 						content: '';
 						position: absolute;
 						top: 0;
@@ -2020,7 +2020,7 @@ input, select, textarea {
 						width: 100%;
 						height: 100%;
 						z-index: 1;
-					}
+					} */
 
 					#main > .panel.intro img.pic {
 						position: absolute;
@@ -2037,43 +2037,6 @@ input, select, textarea {
 						-webkit-object-position: center;
 						-ms-object-position: center;
 						object-position: center;
-					}
-
-					#main > .panel.intro .pic .arrow {
-						display: block;
-						position: absolute;
-						right: 0;
-						top: 50%;
-						margin-top: -1.375em;
-						width: 2.75em;
-						height: 2.75em;
-						background: #000;
-						background: rgba(0, 0, 0, 0.75);
-						color: #ffffff;
-						text-align: center;
-						line-height: 2.75em;
-						font-size: 1.5em;
-						z-index: 1;
-						-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
-						-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
-						-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
-						transition: width .15s ease-in-out, padding-right .15s ease-in-out;
-					}
-
-						#main > .panel.intro .pic .arrow:before {
-							position: relative;
-							padding-right: 0;
-							top: 0.125em;
-						}
-
-						#main > .panel.intro .pic .arrow span {
-							display: block;
-							text-indent: -9999px;
-						}
-
-					#main > .panel.intro .pic:hover .arrow {
-						width: 3em;
-						padding-right: 0.25em;
 					}
 
 				#main > .panel.intro header {

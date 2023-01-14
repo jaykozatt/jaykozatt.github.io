@@ -21,38 +21,6 @@
 		<noscript
 			><link rel="stylesheet" href="assets/css/noscript.css"
 		/></noscript>
-		<script>
-			function ReadMore(id) {
-				var dots = document.getElementById('dots' + id);
-				var moreText = document.getElementById('more' + id);
-				var btnText = document.getElementById('myBtn' + id);
-				var pic = document.getElementById('pic' + id);
-				var text = document.getElementById('text' + id);
-
-				if (dots.style.display === 'none') {
-					dots.style.display = 'inline';
-					btnText.innerHTML = 'Read more';
-					moreText.style.display = 'none';
-
-					// if (pic != null && text != null) {
-					// 	pic.style.order = "initial";
-					// 	text.style.order = "initial";
-					// 	moreText.style.order = "initial";
-					// }
-					var element = document.getElementById(id);
-					element.scrollIntoView({ block: 'center' });
-				} else {
-					dots.style.display = 'none';
-					btnText.innerHTML = 'Read less';
-					moreText.style.display = 'inline';
-					// if (pic != null && text != null) {
-					// 	pic.style.order = "1";
-					// 	text.style.order = "2";
-					// 	moreText.style.order = "3";
-					// }
-				}
-			}
-		</script>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper-->
