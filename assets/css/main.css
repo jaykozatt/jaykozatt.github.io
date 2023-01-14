@@ -2022,14 +2022,13 @@ input, select, textarea {
 						z-index: 1;
 					}
 
-					#main > .panel.intro .pic img {
-						position: relative;
-						display: block;
+					#main > .panel.intro img.pic {
 						position: absolute;
-						top: 0;
-						left: 0;
-						width: 100%;
-						height: 100%;
+						display: block;
+						top: .75em;
+						left: .75em;
+						width: 25%;
+						height: 7.5em;
 						-moz-object-fit: cover;
 						-webkit-object-fit: cover;
 						-ms-object-fit: cover;
@@ -2102,6 +2101,34 @@ input, select, textarea {
 						margin: 0.25em 0 0 0;
 					}
 
+				@media screen and (min-width: 736px) {
+					#main > .panel.intro img.pic {
+						height: 10em;
+						top: 1em;
+						left: 1em;
+					}
+
+					#main > .panel.intro header > #about {
+						position: relative;
+						top: 1em;
+					}
+				}
+
+				@media screen and (min-width: 1024px) {
+					#main > .panel.intro img.pic {
+						position: relative;
+						width: 33%;
+						height: 100%;
+						top: 0em;
+						left: 0em;
+					}
+
+					#main > .panel.intro header > #about {
+						position: relative;
+						top: 0em;
+					}
+				}
+
 				@media screen and (max-width: 980px) {
 
 					#main > .panel.intro {
@@ -2112,11 +2139,6 @@ input, select, textarea {
 						height: auto;
 					}
 
-						#main > .panel.intro .pic {
-							height: 25em;
-							width: 100%;
-						}
-
 						#main > .panel.intro header {
 							padding: 4em;
 							text-align: center;
@@ -2125,10 +2147,6 @@ input, select, textarea {
 				}
 
 				@media screen and (max-width: 736px) {
-
-					#main > .panel.intro .pic {
-						height: 20em;
-					}
 
 					#main > .panel.intro header {
 						padding: 2.75em 2em 2.5em 2em;
@@ -2197,6 +2215,7 @@ input, select, textarea {
 
 	#about {
 		color:#363636;
+		text-align: left;
 	}
 
 	.story {
@@ -2365,6 +2384,8 @@ input, select, textarea {
 	/* border: 1px solid #999; */
 	padding: 0em 0em;
 	/* height: 26rem; */
+
+	/* max-width: 20em; */
   }
   
   .card::before {
@@ -2388,19 +2409,6 @@ input, select, textarea {
 
   .card.name {
 	float: left;
-  }
-
-  .card-cost {
-	background-color: #000;
-	height: 100%;
-	border-radius: 50%;
-	float:right;
-  }
-
-  .card-cost p {	
-	font-weight: bold;
-	color: white;
-	text-align: center;
   }
 
   .card-type {
@@ -2441,6 +2449,26 @@ input, select, textarea {
 	z-index: 100;
   }
   
+  .casual-genre {
+	background-color: rgb(128, 106, 56);
+  }
+
+  .action-genre {
+	background-color: #9f4c4c;
+  }
+
+  .horror-genre {
+	background-color: #4e5748;
+  }
+
+  .puzzle-genre {
+	background-color: #4c4e9f;
+  }
+
+  .highlight-project {
+	background-color: #5f3977;
+  }
+
   .card-body {
 	padding: 0.4em .75em;
 	margin-top: .5em;
@@ -2510,7 +2538,7 @@ input, select, textarea {
   }
   
   .buttons a {
-	background-color: var(--primary-purple);
+	background-color: #222222;
 	outline: none;
 	border: none;
 	color: #fff;
@@ -2523,7 +2551,7 @@ input, select, textarea {
   }
   
   .buttons a:hover {
-	background-color: var(--button-hover);
+	background-color: #333333;
   }
   
 /* Carousel 2*/
@@ -2551,8 +2579,10 @@ input, select, textarea {
 }
 
 .slide-media {
-	width: 100%;
+	width: 110%;
 	margin: auto;
+	position: relative;
+	left: -5%
 	/* border: 1px solid #000; */
 }
 
@@ -2601,23 +2631,37 @@ input, select, textarea {
 
 .row-left i {
 	position: relative;
-	left: -150%;
+	left: -100%;
 }
 
 .row-right i {
 	position: relative;
-	left: -150%;
+	left: -100%;
+}
+
+@media screen and (min-width: 425px) {
+	.row-left i {
+		position: relative;
+		left: -75%;
+	}
+
+	.row-right i {
+		position: relative;
+		left: -75%;
+	}
 }
 
 @media screen and (min-width: 768px) {
 	.row-left i {
 		position: relative;
 		left: -25%;
+		font-size: xx-large;
 	}
 
 	.row-right i {
 		position: relative;
 		left: -25%;
+		font-size: xx-large;
 	}
 }
 

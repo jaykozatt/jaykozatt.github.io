@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		carouselContainer.style.display = 'block';
 
 		currentItem = 0;
-		prevBtn.classList.add("disabled");
+		// prevBtn.classList.add("disabled");
 		imgUser.scrollIntoView(true);
 
 		reviewsContent(currentReview);
@@ -97,16 +97,27 @@ const next = () => {
 	if (currentItem+1 <= slideCount)
 	{
 		currentItem++;
-		checkItemState();
+		// checkItemState();
+		reviewsContent(currentReview);
+	}
+	else
+	{
+		currentItem = 0;
 		reviewsContent(currentReview);
 	}
 };
 
 const prev = () => {
+	let slideCount = reviews[currentReview].slides.proyectTitle.length - 1;
 	if (currentItem-1 >= 0)
 	{
 		currentItem--;
-		checkItemState();
+		// checkItemState();
+		reviewsContent(currentReview);
+	}
+	else
+	{
+		currentItem = slideCount;
 		reviewsContent(currentReview);
 	}
 };
@@ -130,7 +141,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		spaceBetween: 30,
 		slidesPerGroup: 1,
 		breakpoints: {
-			768: {
+			924: {
 				slidesPerView: 2,
 				spaceBetween: 20,
 				slidesPerGroup: 1,
@@ -143,5 +154,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+		simulateTouch: false,
 	});
 });

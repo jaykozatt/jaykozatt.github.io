@@ -3,10 +3,8 @@
 export const reviews = [
 	{
 		id: 1,
-		img: 'images/test.png',
 		projectLink:"https://jaykozatt.itch.io/the-prisoner",
 		projectSrc:"https://github.com/AN-Studio/Brackeys-Game-Jam-2022",
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. D',
 		slides: {
 			proyectTitle: [
 				'1. Inception',
@@ -16,9 +14,9 @@ export const reviews = [
 			],
 			thumbImg: [
 				'assets/css/images/cover-img/the-prisoner.png',
-				'assets/css/images/slideshow/the-prisioner-1.1.png',
-				'assets/css/images/slideshow/the-prisioner-1.2.png',
-				'assets/css/images/slideshow/the-prisioner-1.3.png',
+				'assets/css/images/slideshow/the-prisoner/1.png',
+				'assets/css/images/slideshow/the-prisoner/2.png',
+				'assets/css/images/slideshow/the-prisoner/3.png',
 			],
 			descriptions: [
 				"SORRYYYYY! (T-T) This section is under construction...",
@@ -30,10 +28,8 @@ export const reviews = [
 	},
 	{
 		id: 2,
-		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
 		projectLink:"https://jaykozatt.itch.io/all-bets-are-off",
 		projectSrc: "https://github.com/jaykozatt/AllBetsAreOff",
-		text: 'All Bets Are Off! is a deathmatch arena in which you slice and dice poker chip stacks by means of entangling them with a chain mace in the shape of a die, giving a new meaning to the phrase "rolling dice".',
 		slides: {
 			proyectTitle: [
 				'1. Inception',
@@ -50,16 +46,16 @@ export const reviews = [
 			],
 			thumbImg: [
 				'assets/css/images/cover-img/all-bets-are-off.png',
-				'assets/css/images/slideshow/my-triad.png',
-				'assets/css/images/slideshow/roll-of-the-dice.png',
-				'assets/css/images/slideshow/all-bets-3.jpg',
-				'assets/css/images/slideshow/all-bets-4.jpg',
-				'assets/css/images/slideshow/our-tools.png',
-				'assets/css/images/slideshow/workflow-plan.png',
-				'assets/css/images/slideshow/all-bets-are-off-2.1.png',
-				'assets/css/images/slideshow/all-bets-are-off-2.2.png',
-				'assets/css/images/slideshow/all-bets-are-off-2.3.png',
-				'assets/css/images/slideshow/all-bets-today.png',
+				'assets/css/images/slideshow/all-bets/my-triad.png',
+				'assets/css/images/slideshow/all-bets/roll-of-the-dice.png',
+				'assets/css/images/slideshow/all-bets/all-bets-3.jpg',
+				'assets/css/images/slideshow/all-bets/all-bets-4.jpg',
+				'assets/css/images/slideshow/all-bets/our-tools.png',
+				'assets/css/images/slideshow/all-bets/workflow-plan.png',
+				'assets/css/images/slideshow/all-bets/all-bets-are-off-2.1.png',
+				'assets/css/images/slideshow/all-bets/all-bets-are-off-2.2.png',
+				'assets/css/images/slideshow/all-bets/all-bets-are-off-2.3.png',
+				'assets/css/images/slideshow/all-bets/all-bets-today.png',
 			],
 			descriptions: [
 				"All Bets Are Off! came to be as a result of 2022's yearly gamedev marathon " +
@@ -137,10 +133,8 @@ export const reviews = [
 	},
 	{
 		id: 3,
-		img: 'https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png',
 		projectLink: "https://drive.google.com/file/d/1-xBybK2vGnGGrcAiZskuFoJIYc-Cl_Ye/view?usp=sharing",
 		projectSrc: "",
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugitsed vel tempore ea, qui maxime accusantium deleniti consectetur iustoveniam hic, voluptates quasi iure quos porro laborum, inventoreprovident?',
 		slides: {
 			proyectTitle: [
 				'1. Inception',
@@ -149,8 +143,8 @@ export const reviews = [
 			],
 			thumbImg: [
 				'assets/css/images/cover-img/rogue-assembly.png',
-				'assets/css/images/slideshow/rogue-assembly-1.png',
-				'assets/css/images/slideshow/rogue-assembly-2.png',
+				'assets/css/images/slideshow/rogue-assembly/1.png',
+				'assets/css/images/slideshow/rogue-assembly/2.png',
 			],
 			descriptions: [
 				"This game remains currently UNRELEASED because it didn't make it to the deadline of the "+
