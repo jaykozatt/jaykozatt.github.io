@@ -1,30 +1,28 @@
-import { reviews } from './modules/data.js';
+import { projects } from './modules/data.js';
 
-const imgUser = document.querySelector('.img-card'),
-	userText = document.querySelector('.user-text'),
-	proyectTitleTag = document.querySelector('.project-title'),
-	thumbnails = document.querySelector('.thumbnails'),
+const presentationMedia = document.querySelector('.slide-media'),
+	presentationTitle = document.querySelector('.slide-title'),
+	presentationText = document.querySelector('.slide-text'),
 	projectLink = document.querySelector('.project-link'),
-	projectSrc = document.querySelector('.project-src'),
-	card = document.querySelectorAll('.card');
+	projectSrc = document.querySelector('.project-src');
 
 const prevBtn = document.querySelector('.row-left'),
 	nextBtn = document.querySelector('.row-right');
 
 let currentItem = 0;
-let currentReview = 0;
+let currentProject = 0;
 
-const reviewsContent = (currentReview = 0) => {
-	const review = reviews[currentReview],
-		textActivated = review.slides.descriptions[currentItem],
-		imgActived = review.slides.thumbImg[currentItem],
-		titleActive = review.slides.proyectTitle[currentItem],
-		linkActive = review.projectLink,
-		sourceActive = review.projectSrc;
+const getProjectContent = (currentProject = 0) => {
+	const project = projects[currentProject],
+		mediaActived = project.slides[currentItem].media,
+		titleActive = project.slides[currentItem].title,
+		textActivated = project.slides[currentItem].text,
+		linkActive = project.projectLink,
+		sourceActive = project.projectSrc;
 
-	imgUser.src = imgActived;
-	userText.textContent = textActivated;
-	proyectTitleTag.textContent = titleActive;
+	presentationMedia.innerHTML = mediaActived;
+	presentationTitle.textContent = titleActive;
+	presentationText.innerHTML = textActivated;
 	projectLink.href = linkActive;
 	projectSrc.href = sourceActive;
 
@@ -37,33 +35,6 @@ const reviewsContent = (currentReview = 0) => {
 		projectSrc.style.display = 'none';
 	else
 		projectSrc.style.display = 'block';
-
-	// thumbImgGenerator(review);
-};
-
-const changeInfo = (e) => {
-	imgUser.src = e.target.src;
-	userText.textContent = e.target.dataset.description;
-	proyectTitleTag.textContent = e.target.dataset.title;
-	currentItem = e.target.dataset.count;
-};
-
-const thumbImgGenerator = (review) => {
-	let count = 0;
-	thumbnails.innerHTML = ' ';
-
-	review.slides.thumbImg.forEach((thumbI) => {
-		count++;
-		let thumbImg = document.createElement('img');
-		thumbImg.classList.add('thumbnails-img');
-		thumbImg.src = thumbI;
-		thumbImg.dataset.title = review.proyectTitle[count - 1];
-		thumbImg.dataset.description = review.slides.descriptions[count - 1];
-		thumbImg.dataset.count = count - 1;
-
-		thumbImg.addEventListener('click', changeInfo);
-		thumbnails.appendChild(thumbImg);
-	});
 };
 
 const carouselContainer = document.querySelector('.carousel-container');
@@ -78,59 +49,47 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		if (currentHash !== '#' + carouselContainer.id) {
 			return (carouselContainer.style.display = 'none');
 		}
-		currentReview = target.dataset.order - 1;
+		currentProject = target.dataset.order - 1;
 
 		carouselContainer.style.display = 'block';
 
 		currentItem = 0;
 		// prevBtn.classList.add("disabled");
-		imgUser.scrollIntoView(true);
+		presentationMedia.scrollIntoView(true);
 
-		reviewsContent(currentReview);
+		getProjectContent(currentProject);
 	};
 
 	$(btnRead).click(e, showCarousel);
 });
 
 const next = () => {
-	let slideCount = reviews[currentReview].slides.proyectTitle.length - 1;
+	let slideCount = projects[currentProject].slides.length - 1;
 	if (currentItem+1 <= slideCount)
 	{
 		currentItem++;
-		// checkItemState();
-		reviewsContent(currentReview);
+		getProjectContent(currentProject);
 	}
 	else
 	{
 		currentItem = 0;
-		reviewsContent(currentReview);
+		getProjectContent(currentProject);
 	}
 };
 
 const prev = () => {
-	let slideCount = reviews[currentReview].slides.proyectTitle.length - 1;
+	let slideCount = projects[currentProject].slides.length - 1;
 	if (currentItem-1 >= 0)
 	{
 		currentItem--;
-		// checkItemState();
-		reviewsContent(currentReview);
+		getProjectContent(currentProject);
 	}
 	else
 	{
 		currentItem = slideCount;
-		reviewsContent(currentReview);
+		getProjectContent(currentProject);
 	}
 };
-
-const checkItemState = () => {
-	let slideCount = reviews[currentReview].slides.proyectTitle.length - 1;
-	
-	if (currentItem-1 < 0) prevBtn.classList.add("disabled");
-	else prevBtn.classList.remove("disabled");
-
-	if (currentItem+1 > slideCount) nextBtn.classList.add("disabled");
-	else nextBtn.classList.remove("disabled");
-}
 
 nextBtn.addEventListener('click', next);
 prevBtn.addEventListener('click', prev);

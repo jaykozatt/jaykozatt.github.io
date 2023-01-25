@@ -2066,9 +2066,10 @@ input, select, textarea {
 
 				@media screen and (min-width: 736px) {
 					#main > .panel.intro img.pic {
-						height: 10em;
-						top: 1em;
-						left: 1em;
+						height: 9em;
+						width: 23%;
+						top: 2em;
+						left: 2em;
 					}
 
 					#main > .panel.intro header > #about {
@@ -2092,7 +2093,7 @@ input, select, textarea {
 					}
 				}
 
-				@media screen and (max-width: 980px) {
+				@media screen and (max-width: 1024px) {
 
 					#main > .panel.intro {
 						-moz-flex-direction: column;
@@ -2209,24 +2210,25 @@ input, select, textarea {
 		display: none;
 	}
 
-	p.project-description {
+	.card-description {
 		font-weight: 500;
 		font-size: 90%;
 		color: #777777;
 	}
 
-	h3.project-title {
+	.slide-title {
 		font-weight: bold;
 		color: #333;
 	}
 
-	p.user-text {
+	.slide-text {
 		font-weight: 400;
 		text-align: justify;
 		color:#777777;
+		line-height: 1.66em;
 	}
 
-	p.footnote {
+	.footnote {
 		opacity: 60%;
 		font-weight: bolder;
 	}
@@ -2244,6 +2246,10 @@ input, select, textarea {
 	button {
 		font-size: small;
 		border-radius: 0.5em;
+	}
+
+	p {
+		margin-bottom: 1em;
 	}
 
 	@media screen and (min-width:768px) {
@@ -2269,6 +2275,14 @@ input, select, textarea {
 		width: 100%;
 		text-align: center;
 		margin: auto;
+	}
+
+	.slide-text > p > b {
+		font-weight: 600;
+	}
+
+	.slide-text > p > i {
+		font-style: italic;
 	}
 	
 /* mvbri's code */
@@ -2532,7 +2546,7 @@ input, select, textarea {
     display: flex;
 }
 
-.container-slide{
+.presentation-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2541,7 +2555,7 @@ input, select, textarea {
     padding: 1em;
 }
 
-.slide-media {
+.slide-container {
 	width: 110%;
 	margin: auto;
 	position: relative;
@@ -2549,7 +2563,7 @@ input, select, textarea {
 	/* border: 1px solid #000; */
 }
 
-.slide-image {
+.slide-media {
 	width: 80%;
 	height: auto;
 	/* border: 1px solid #000; */
@@ -2557,11 +2571,23 @@ input, select, textarea {
 	/* margin: auto; */
 }
 
-.slide-image img {
+.slide-media img {
 	width: 100%;
 	height: auto;
 	/* border: 1px solid #000; */
 	object-fit: cover;
+	aspect-ratio: 16/9;
+}
+
+.slide-media iframe {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
+.slide-media video {
+	width: 100%;
+	height: auto;
 	aspect-ratio: 16/9;
 }
 
