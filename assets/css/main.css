@@ -2078,7 +2078,7 @@ input, select, textarea {
 					}
 				}
 
-				@media screen and (min-width: 1024px) {
+				@media screen and (min-width: 1023px) {
 					#main > .panel.intro img.pic {
 						position: relative;
 						width: 33%;
@@ -2093,7 +2093,7 @@ input, select, textarea {
 					}
 				}
 
-				@media screen and (max-width: 1024px) {
+				@media screen and (max-width: 1023px) {
 
 					#main > .panel.intro {
 						-moz-flex-direction: column;
@@ -2208,6 +2208,17 @@ input, select, textarea {
 	
 	#moreRetina {
 		display: none;
+	}
+
+	#logo {
+		height: 1em;
+		vertical-align: middle;
+	}
+
+	#logo.bottom-right {
+		position: absolute;
+		right: 1em;
+		height: 2em;
 	}
 
 	.card-description {
