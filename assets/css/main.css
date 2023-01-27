@@ -2268,7 +2268,7 @@ input, select, textarea {
 
 	.disabled {
 		pointer-events: none;
-		opacity: 10%;
+		opacity: 33%;
 	}
 
 	.center-icon {
@@ -2278,6 +2278,10 @@ input, select, textarea {
 	}
 
 	.slide-text > p > b {
+		font-weight: 600;
+	}
+
+	.slide-text > ol > li > b {
 		font-weight: 600;
 	}
 
