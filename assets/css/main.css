@@ -2215,7 +2215,7 @@ input, select, textarea {
 		vertical-align: middle;
 	}
 
-	#logo.bottom-right {
+	#main #logo {
 		position: absolute;
 		right: 1em;
 		height: 2em;
