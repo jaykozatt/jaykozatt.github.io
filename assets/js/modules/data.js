@@ -9,7 +9,7 @@ export const projects = [
 		slides: [
 			{
 				title: "1 Inception",
-				media: `<img src="assets/css/images/slideshow/the-prisoner/1.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/the-prisoner/1.jpg"></img>`,
 				text: 
 					`<p>
 						<b>The Prisoner</b> was my third game jam project. It was conceptualised for 2022’s second <i>Brackeys Game Jam</i>, another gamedev marathon, this one spanning over the course of a whole week. In it, participants are expected to fully carry out the designing and prototyping of a single game, following a theme provided by the organising committee. 
@@ -20,7 +20,7 @@ export const projects = [
 			},
 			{
 				title: "2 The Team",
-				media: `<img src="assets/css/images/slideshow/the-prisoner/2.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/the-prisoner/2.jpg"></img>`,
 				text: 
 					`<p>
 						This time around, I was joined by the same 2 other souls with whom I participated in the GMTK Game Jame, so the roles ended up distributed in this manner: <b>John Bone</b> as the artist; <b>Ram99</b> as the musician; and myself, <b>Jay Kozatt</b>, as the game designer, programmer, storywriter and audio designer.
@@ -31,7 +31,7 @@ export const projects = [
 			},
 			{
 				title: "3 The Goal of the Project",
-				media: `<img src="assets/css/images/slideshow/the-prisoner/3.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/the-prisoner/3.jpg"></img>`,
 				text: 
 					`<p>
 						Coming fresh from our success in the GMTK Game Jam, I was set on creating an assorted collection of games from different genres, and building upon the experiences acquired on the previous event.
@@ -42,7 +42,7 @@ export const projects = [
 			},
 			{
 				title: "4.1 The Design Challenge",
-				media: `<img src="assets/css/images/slideshow/the-prisoner/4.1.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/the-prisoner/4.1.jpg"></img>`,
 				text: 
 					`<p>
 						With a theme that so obviously pushed us as designers into the horror genre, this time around I ended up going with the flow of what first came to mind when reading that theme.
@@ -56,7 +56,7 @@ export const projects = [
 			},
 			{
 				title: "4.2 \“But, hey! That’s just a Theory… A Game Theory!\”",
-				media: `<img src="assets/css/images/slideshow/the-prisoner/4.2.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/the-prisoner/4.2.jpg"></img>`,
 				text: 
 					`<p>
 						For whatever reason, once I gave myself into the idea of horror, the brainstorming session went pretty smoothly.
@@ -70,7 +70,7 @@ export const projects = [
 			},
 			{
 				title: "4.3 The dilemma begins… 2D or 3D?",
-				media: `<img src="assets/css/images/slideshow/the-prisoner/4.3.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/the-prisoner/4.3.jpg"></img>`,
 				text: 
 					`<p>
 						One of the major obstacles we faced with this theme, and having given ourselves into the horror genre, was regarding the question of <b>presentation</b>.
@@ -125,7 +125,7 @@ export const projects = [
 			},
 			{
 				title: "6.2 It’s alive, it’s alive, IT’S ALIVE! (And it talks)",
-				media: `<img src="assets/css/images/slideshow/the-prisoner/6.2.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/the-prisoner/6.2.jpg"></img>`,
 				text: 
 					`<p>
 						So now that the monster had space to live in (and a player to keep it company), it was now time to grant it its “voice” (in the form of text). But to handle that huge amount of text and all of the interactivity, no shoddy two bit script written in a day would do.
@@ -166,7 +166,7 @@ export const projects = [
 			},
 			{
 				title: "7 The Outcome",
-				media: `<img src="assets/css/images/slideshow/the-prisoner/7.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/the-prisoner/7.jpg"></img>`,
 				text: 
 					`<p>
 						Sadly, not at all stories have <b>happy endings</b>.
@@ -186,7 +186,7 @@ export const projects = [
 			},
 			{
 				title: "8 Lessons and Takeaways",
-				media: `<img src="assets/css/images/slideshow/the-prisoner/8.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/the-prisoner/8.jpg"></img>`,
 				text: 
 					`<p>
 						While the game wasn’t a complete failure (it was even a success in some regards), in retrospect it is quite obvious to me that I took on a great <b>many risks</b> for this entry.
@@ -241,7 +241,7 @@ export const projects = [
 		slides: [
 			{
 				title: "1 Inception",
-				media: `<img src="assets/css/images/slideshow/all-bets/1.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/all-bets/1.jpg"></img>`,
 				text: 
 					`<p>
 						<b>All Bets Are Off!</b> was born out of the <i>GMTK Game Jam</i>, a yearly gamedev marathon in which participants fully carry out the process of <i>designing</i> and <i>prototyping</i> a single game, while sticking to an overarching theme provided by the organisers. And all of that under the span of <i>48 hours</i>.  
@@ -252,7 +252,7 @@ export const projects = [
 			},
 			{
 				title: "2 The Team",
-				media: `<img src="assets/css/images/slideshow/all-bets/2.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/all-bets/2.jpg"></img>`,
 				text: 
 					`<p>
 						The project in question was initially carried out by a 3-man team, namely: <b>John Bone</b> as the artist; <b>Ram99</b> as the musician and audio designer; and myself, <b>Jay Kozatt</b>, as the overall programmer and game designer. Though afterwards, when the project got revisited, in addition to my previous roles, I took over the roles of artist and sound designer, with support from Ram99 still as the musician.
@@ -260,7 +260,7 @@ export const projects = [
 			},
 			{
 				title: "3 The Goal of the Project",
-				media: `<img src="assets/css/images/slideshow/all-bets/3.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/all-bets/3.jpg"></img>`,
 				text: 
 					`<p>
 						As stated before, our initial goal was simply to deliver a <b>minimum viable product</b> (MVP) under the tight constraint of a 48-hours development cycle, despite our lack of experience with the event format. Which we managed to 
@@ -285,7 +285,7 @@ export const projects = [
 			},
 			{
 				title: "4.2 Our First Ideas",
-				media: `<img src="assets/css/images/slideshow/all-bets/4.2.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/all-bets/4.2.jpg"></img>`,
 				text: 
 					`<p>
 						We spent our first 3 hours debating ideas, until we found something that sounded promising. Some of the ideas we initially had, attempted to play around with the meaning of “rolling” and “dicing”.
@@ -303,7 +303,7 @@ export const projects = [
 			},
 			{
 				title: "4.3 We’ve got a Winner!",
-				media: `<img src="assets/css/images/slideshow/all-bets/4.3.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/all-bets/4.3.jpg"></img>`,
 				text: 
 					`<p>
 						As I began to think and stretch the meaning of “rolling” quite liberally, which is defined as “(to) move or cause to move in a particular direction by turning over and over on an axis”, I started to approach more and more to the concept of “spinning” and “wrapping”, instead of “rolling” (Yes, I know I stretched the meaning a whole lot. Don’t question it. What matters is that it turned out fun). 
@@ -317,7 +317,7 @@ export const projects = [
 			},
 			{
 				title: "5 The Tools and Implements",
-				media: `<img src="assets/css/images/slideshow/all-bets/5.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/all-bets/5.jpg"></img>`,
 				text: 
 					`<p>
 						Prior to the event, we all had previously worked with each other on preceding projects. So by this point, we all had conventions established that pretty much didn’t require any discussion. 
@@ -331,7 +331,7 @@ export const projects = [
 			},
 			{
 				title: "6.1 Contribution Highlights",
-				media: `<img src="assets/css/images/slideshow/all-bets/6.1.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/all-bets/6.1.jpg"></img>`,
 				text: 
 					`<p>
 						Getting the core mechanic feeling right was my main priority during the event. The <b>spinning</b> of the die, and the feedback from <b>collisions</b>, as well as the <b>wrapping</b> around targets, were the things that would make or break the experience. 
@@ -372,7 +372,7 @@ export const projects = [
 			},
 			{
 				title: "6.4 Smashing the Competition",
-				media: `<img src="assets/css/images/slideshow/all-bets/6.4.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/all-bets/6.4.jpg"></img>`,
 				text: 
 					`<p>
 						Finally, I rounded off the whole package by enabling the player to execute an <b>instant tackle</b> towards the entangled object that would obliterate any enemies in its path. And with that, we have completed the implementation of the core capabilities of the player.
@@ -383,7 +383,7 @@ export const projects = [
 			},
 			{
 				title: "7 Game Jam Results",
-				media: `<img src="assets/css/images/slideshow/all-bets/7.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/all-bets/7.jpg"></img>`,
 				text: 
 					`<p>
 						The game was a small success at the event. Many people praised it for its creativity and originality, especially within a sea of randomisation and repetitive dice mechanics. So much so, that our project was <b>ranked #742</b> out of over 6100 other competing titles, in terms of <i>creativity</i>; and <b>ranked #850 overall</b>, from aggregating all the criterias of <i>creativity</i>, <i>enjoyment</i> and <i>presentation</i>.
@@ -394,7 +394,7 @@ export const projects = [
 			},
 			{
 				title: "8 Lessons and Takeaways",
-				media: `<img src="assets/css/images/slideshow/all-bets/8.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/all-bets/8.jpg"></img>`,
 				text: 
 					`<p>
 						The main lesson I got out of this project was regarding the importance of <b>good intuitive UI</b>, to help bridge the gap in knowledge between a new player and an experienced player as fast as possible.
@@ -475,9 +475,9 @@ export const projects = [
 		// 		"3.1. The Design Challenge",
 		// 	],
 		// 	media: [
-		// 		`assets/css/images/cover-img/rogue-assembly.png`,
-		// 		`assets/css/images/slideshow/rogue-assembly/1.png`,
-		// 		`assets/css/images/slideshow/rogue-assembly/2.png`,
+		// 		`assets/css/images/cover-img/rogue-assembly.jpg`,
+		// 		`assets/css/images/slideshow/rogue-assembly/1.jpg`,
+		// 		`assets/css/images/slideshow/rogue-assembly/2.jpg`,
 		// 	],
 		// 	descriptions: [
 		// 		"<p>This game remains currently UNRELEASED because it didn't make it to the deadline of the "+
