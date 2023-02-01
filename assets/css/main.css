@@ -2219,7 +2219,7 @@ input, select, textarea {
 
 	#home #logo {
 		position: absolute;
-		right: 1em;
+		right: 1.5em;
 		height: 2em;
 	}
 
@@ -2253,7 +2253,7 @@ input, select, textarea {
 
 	
 	.call-to-action:hover {
-		background-color: rgb(117, 68, 186);
+		background-color: #7544ba;
 	}
 	
 	button {
