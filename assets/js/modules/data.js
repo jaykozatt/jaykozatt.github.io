@@ -418,7 +418,7 @@ export const projects = [
 			{
 				title: "9 The Game TODAY",
 				media: 
-					`<iframe frameborder="0" src="https://itch.io/embed-upload/7261625?color=ac313f" allowfullscreen="" width="100%" height="auto" scrolling="no" referrerpolicy=origin><a href="https://jaykozatt.itch.io/all-bets-are-off">Play All Bets Are Off! on itch.io</a></iframe>`,
+					`<iframe frameborder="0" src="https://itch.io/embed-upload/7267775?color=ac313f" allowfullscreen="" width="100%" height="auto" scrolling="no" referrerpolicy=origin><a href="https://jaykozatt.itch.io/all-bets-are-off">Play All Bets Are Off! on itch.io</a></iframe>`,
 					// `<iframe frameborder="0" src="game-builds/all-bets/index.html" allowfullscreen="" width="100%" height="auto" scrolling="no" referrerpolicy=origin><a href="https://jaykozatt.itch.io/all-bets-are-off">Play All Bets Are Off! on itch.io</a></iframe>`,
 
 				text: 
