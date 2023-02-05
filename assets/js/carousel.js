@@ -12,6 +12,28 @@ const prevBtn = document.querySelector('.row-left'),
 let currentItem = 0;
 let currentProject = 0;
 
+document.addEventListener('DOMContentLoaded', (e) => {
+	var swiper = new Swiper('.mySwiper', {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		slidesPerGroup: 1,
+		breakpoints: {
+			924: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				slidesPerGroup: 1,
+			},
+		},
+		rewind: true,
+		pagination: false,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		simulateTouch: false,
+	});
+});
+
 const getProjectContent = (currentProject = 0) => {
 	const project = projects[currentProject],
 		mediaActived = project.slides[currentItem].media,
@@ -94,25 +116,4 @@ const prev = () => {
 nextBtn.addEventListener('click', next);
 prevBtn.addEventListener('click', prev);
 
-document.addEventListener('DOMContentLoaded', (e) => {
-	var swiper = new Swiper('.mySwiper', {
-		slidesPerView: 1,
-		spaceBetween: 30,
-		slidesPerGroup: 1,
-		breakpoints: {
-			924: {
-				slidesPerView: 2,
-				spaceBetween: 20,
-				slidesPerGroup: 1,
-			},
-		},
-		loop: true,
-		loopFillGroupWithBlank: true,
-		pagination: false,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		simulateTouch: false,
-	});
-});
+
