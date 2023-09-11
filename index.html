@@ -16,21 +16,21 @@
 		<!-- Primary Meta Tags -->
 		<title>Jay Kozatt | Game Development Portfolio</title>
 		<meta name="title" content="Jay Kozatt | Game Development Portfolio">
-		<meta name="description" content="Freelance Unity Developer specialised into gameplay, design & object kinematics.">
+		<meta name="description" content="Freelance Unity Developer specialised into mobile gameplay & design.">
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://jaykozatt.github.io/">
 		<meta property="og:title" content="Jay Kozatt | Game Development Portfolio">
-		<meta property="og:description" content="Freelance Unity Developer specialised into gameplay, design & object kinematics.">
-		<meta property="og:image" content="https://jaykozatt.github.io/images/card.png">
+		<meta property="og:description" content="Freelance Unity Developer specialised into mobile gameplay & design.">
+		<meta property="og:image" content="https://jaykozatt.github.io/assets/css/images/card.png">
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:url" content="https://jaykozatt.github.io/">
 		<meta property="twitter:title" content="Jay Kozatt | Game Development Portfolio">
-		<meta property="twitter:description" content="Freelance Unity Developer specialised into gameplay, design & object kinematics.">
-		<meta property="twitter:image" content="https://jaykozatt.github.io/images/card.png">
+		<meta property="twitter:description" content="Freelance Unity Developer specialised into mobile gameplay & design.">
+		<meta property="twitter:image" content="https://jaykozatt.github.io/assets/css/images/card.png">
 
 		<!-- Swiper JS -->
 		<link
@@ -49,7 +49,7 @@
 			<nav id="nav">
 				<a href="#home" class="icon solid fa-user"><span>Profile</span></a>
 				<a href="#work" class="icon solid fa-folder"><span>Portfolio</span></a>
-				<a href="#blog" class="icon solid fa-pen-nib"><span>Blog</span></a>
+				<!-- <a href="#blog" class="icon solid fa-pen-nib"><span>Blog</span></a> -->
 				<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 			</nav>
 
@@ -57,25 +57,31 @@
 			<div id="main">
 				<!-- Me -->
 				<article id="home" class="panel intro">
-					<img class="pic" src="images/profilepic.png" alt="Profile Pic" />
+					<img class="pic" src="assets/css/images/profilepic.png" alt="Profile Pic" />
 					<header>
-					<h1
-					style="
-								font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
-								sans-serif;
-								"
-						>
-							Jay Kozatt
-							<img id="logo" src="favicon.svg" alt="Logo" />
-						</h1>
-						<p id="jobtitle">Gameplay Engineer</p>
+						<div class="row heading">
+							<h1>
+								<img id="logo" src="favicon.svg" alt="Logo" />
+							</h1>
+							<div>
+								<h1
+								style="
+										font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+										sans-serif;
+										"
+								>
+									Jay Kozatt
+								</h1>
+								<p id="jobtitle">Gameplay Engineer</p>
+							</div>
+						</div>
 						<br />
 						<p id="about">
-							Specialist in Unity 2D, with experience in game
-							design, programming, and art.
-							<br />
-							Passionate about creating systems and environments conducive
-							to emergent gameplay and thriving individuals.
+							Specialist in Unity, with over 2 years of experience in
+							gameplay engineering & design, focused on mobile. 
+							<br /><br />
+							Passionate about creating systems and environments
+							with the aim to deliver fresh experiences and thriving individuals.
 						</p>
 					</header>
 				</article>
@@ -115,15 +121,13 @@
 											</div>
 
 											<div class="card-type">
-												<h4 class="name ml-2">Casual / Mobile</h4>
+												<h4 class="name ml-2">Action / Casual / Mobile</h4>
 											</div>
 
 											<div class="card-body">
 												<p class="card-description">
-													All Bets Are Off! is a deathmatch arena in which you
-													face off against stacks of poker chips, with your trusty
-													chain-mace shaped like a die. Unleash a maelstrom of roulette balls, 
-													and show those chips who's boss!
+													Hook'n Tackle action within a casino-themed battle arena. 
+													Many chips enter, and only one shall come out on top.
 												</p>	
 											</div>
 
@@ -136,6 +140,38 @@
 									</div>
 
 									<div class="card swiper-slide">
+										<div class="card-container casual-genre">
+											<div class="card-title">
+												<h4 class="name ml-2">The Path</h4>
+											</div>
+
+											<div class="image-card">
+												<img
+													src="./assets/css/images/cover-img/the-path.png"
+													alt=""
+												/>
+											</div>
+
+											<div class="card-type">
+												<h4 class="name ml-2">Hyper-Casual / Mobile</h4>
+											</div>
+
+											<div class="card-body">
+												<p class="card-description">
+													Guide a ball to the hole as you keep it balanced along a winding
+													path with a pulleyed bar.
+												</p>	
+											</div>
+
+											<div class="buttons ml-2">
+												<a data-order="4" class="btn-read" href="#carousel">
+													READ MORE
+												</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="card swiper-slide">
 										<div class="card-container horror-genre">
 											<div class="card-title">
 												<h4 class="name ml-2">The Prisoner: Dread or Trust</h4>
@@ -143,21 +179,20 @@
 
 											<div class="image-card">
 												<img
-													src="./assets/css/images/cover-img/the-prisoner.png"
-													alt=""
+												src="./assets/css/images/cover-img/the-prisoner.png"
+												alt=""
 												/>
 											</div>
-
+											
 											<div class="card-type">
 												<h4 class="name ml-2">Horror / 3D Visual Novel</h4>
 											</div>
-
+											
 											<div class="card-body">
 												<p class="card-description">
-													The Prisoner is a horror story that has you wake up
-													within a prison and forced to play a game of trust and
-													betrayal with another inmate. The winner shall decide
-													who gets to stay, and who gets to leave.
+													A short horror story in which you're forced to play a game of trust and
+													betrayal with another inmate. Winner decides
+													who leaves.
 												</p>
 											</div>
 											
@@ -172,37 +207,37 @@
 									<div class="card swiper-slide">
 										<div class="card-container puzzle-genre">
 											<div class="card-title">
-												<h3 class="name ml-2">[WIP] Rogue Assembly</h3>
+												<h3 class="name ml-2">Gaia's Revenge</h3>
 											</div>
-
+		
 											<div class="image-card">
 												<img
-													src="./assets/css/images/cover-img/rogue-assembly.png"
+													src="./assets/css/images/cover-img/gaias-revenge.png"
 													alt=""
 												/>
 											</div>
-
+		
 											<div class="card-type">
-												<h4 class="name ml-2">Puzzle / Management</h4>
+												<h4 class="name ml-2">Puzzle / Strategy / Casual</h4>
 											</div>
-
+		
 											<div class="card-body">
 												<p class="card-description">
-													A game of trust & deception in which you collaborate with 
-													AI to earn money and save your bedridden child.
+													A concept prototype in which you shape nature &
+													geography in order to contain a rapidly expanding humanity.
 												</p>
 											</div>
-
-											<div class="buttons ml-2 disabled">
+		
+											<div class="buttons ml-2">
 												<a data-order="3" class="btn-read " href="#carousel">
-													[Not Available]
+													READ MORE
 												</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
+							
 							<div class="swiper-button-next"></div>
 							<div class="swiper-button-prev"></div>
 						</section>
@@ -274,7 +309,7 @@
 							</h2>
 						</header>
 						<div class="col-12 contact-info slidein-animation">
-							<a href="docs/Jay Kozatt - CV 2022 (Photoless).pdf" target="_blank"
+							<a href="docs/Jay Kozatt - CV 2023.pdf" target="_blank"
 								><button class="call-to-action"><span class="icon solid fa-download fa-fw"></span> DOWNLOAD</button></a
 							>
 						</div>
@@ -314,7 +349,7 @@
 										<span class="ml-1">LinkedIn</span>
 									</a>
 								</div>
-								<!-- <div class="col-12">
+								<div class="col-12">
 									<a
 										class="link-color link-color-hover no-decoration link-t"
 										href="https://www.twitter.com/jaykozatt"
@@ -323,13 +358,13 @@
 										<span class="icon solid brands fa-twitter fa-fw"></span>
 										<span class="ml-1">Twitter</span>
 									</a>
-								</div> -->
+								</div>
 								<div class="col-12 overflow-hiden">
 									<span
 										class="icon animation-hiden solid brands fa-discord fa-fw"
 									></span>
 									<span class="ml-1">
-										Discord: JayKozatt#3279
+										Discord: jaykozatt
 									</span>
 								</div>
 							</h4>
@@ -349,7 +384,7 @@
 				</article>
 
 				<!-- Blog-->
-				<article id="blog" class="panel">
+				<!-- <article id="blog" class="panel">
 					<section>
 						<header>
 							<h2
@@ -363,7 +398,7 @@
 							</h2>
 						</header>
 						<!-- This is the hook for SociableKit's RSS Feed-->
-						<iframe src='https://widgets.sociablekit.com/medium-publication-feed/iframe/114329' frameborder='0' width='100%' height='2700'></iframe>
+						<!-- <iframe src='https://widgets.sociablekit.com/medium-publication-feed/iframe/114329' frameborder='0' width='100%' height='2700'></iframe>
 					</section>
 					<hr />
 					<p class="text-center footnote">
@@ -375,13 +410,13 @@
 						<span class="icon solid fa-star"></span>
 						<span class="icon solid fa-star"></span>
 					</p>
-				</article>
+				</article> --> 
 			</div>
 
 			<!-- Footer -->
 			<div id="footer">
 				<ul class="copyright">
-					<li>&copy; Jay Kozatt 2022.</li>
+					<li>&copy; Jay Kozatt 2023.</li>
 					<li>Template Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>

@@ -74,6 +74,10 @@ input, select, textarea {
 }
 
 /* Row */
+.heading {
+	position:relative;
+	left: 0%;
+}
 
 	.row {
 		display: flex;
@@ -317,7 +321,10 @@ input, select, textarea {
 				}
 
 		@media screen and (max-width: 1680px) {
-
+			.heading {
+				position:relative;
+				left: 0%;
+			}
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -562,6 +569,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
+			.heading {
+				position:relative;
+				left: 0%;
+			}
 
 			.row {
 				display: flex;
@@ -807,7 +818,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
-
+			.heading {
+				position:relative;
+				left: 33%;
+			}
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1052,6 +1066,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+			.heading {
+				position:relative;
+				left: 33%;
+			}
 
 			.row {
 				display: flex;
@@ -2177,10 +2195,11 @@ input, select, textarea {
 
 	#jobtitle {
 		color:#777777;
+
 	}
 
 	#about {
-		color:#363636;
+		color:#333;
 		text-align: left;
 	}
 
@@ -2215,11 +2234,15 @@ input, select, textarea {
 	#logo {
 		height: 1em;
 		vertical-align: middle;
+		margin-top: -0.1em;
 	}
 
 	#home #logo {
-		position: absolute;
-		right: 1.5em;
+		/* position: absolute;
+		right: 1.5em; */
+		margin-top: -0.9em;
+		margin-left: -0.8em;
+		margin-right: -0.1em;
 		height: 2em;
 	}
 
@@ -2290,11 +2313,20 @@ input, select, textarea {
 		margin: auto;
 	}
 
+	.quote {
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
 	.slide-text > p > b {
 		font-weight: 600;
 	}
 
 	.slide-text > ol > li > b {
+		font-weight: 600;
+	}
+
+	.slide-text > ul > li > b {
 		font-weight: 600;
 	}
 
@@ -2444,7 +2476,7 @@ input, select, textarea {
   }
   
   .casual-genre {
-	background-color: rgb(128, 106, 56);
+	background-color: rgb(181, 155, 96);
   }
 
   .action-genre {
