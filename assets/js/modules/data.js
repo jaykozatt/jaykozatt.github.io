@@ -233,8 +233,8 @@ export const projects = [
 			{
 				title: "9 The Game TODAY",
 				media: 
-					`<img src="assets/css/images/cover-img/the-prisoner.png"></img>`,
-					// `<iframe frameborder="0" src="game-builds/the-prisoner/index.html" allowfullscreen="" width="100%" height="auto" scrolling="no" referrerpolicy=origin><a href="https://jaykozatt.itch.io/The Prisoner">Play The Prisoner: Dread or Trust on itch.io</a></iframe>`,
+					// `<img src="assets/css/images/cover-img/the-prisoner.png"></img>`,
+					`<iframe frameborder="0" src="https://itch.io/embed-upload/8683860?color=000000" allowfullscreen="" width="100%" height="auto"><a href="https://jaykozatt.itch.io/the-prisoner">Play The Prisoner: Dread or Trust on itch.io</a></iframe>`,
 				text: 
 					`<p>
 						<b>Sadly, I cannot offer a Web build to check out the game at the moment.</b> Some of the effects and tech used on this project appear to encounter issues when rendering in a web build, resulting in a black void with some floating elements in space. I'm working hard to hopefully solve this issue at some point. In the meantime, I'll have to ask you to download it at Itch.io if you really wish to give it a look. 
