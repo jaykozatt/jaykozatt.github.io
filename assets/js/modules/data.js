@@ -237,7 +237,7 @@ export const projects = [
 					`<iframe frameborder="0" src="https://itch.io/embed-upload/8683860?color=000000" allowfullscreen="" width="100%" height="auto"><a href="https://jaykozatt.itch.io/the-prisoner">Play The Prisoner: Dread or Trust on itch.io</a></iframe>`,
 				text: 
 					`<p>
-						<b>Sadly, I cannot offer a Web build to check out the game at the moment.</b> Some of the effects and tech used on this project appear to encounter issues when rendering in a web build, resulting in a black void with some floating elements in space. I'm working hard to hopefully solve this issue at some point. In the meantime, I'll have to ask you to download it at Itch.io if you really wish to give it a look. 
+						(<b>Update:</b> Finally managed to get the WebGL version working.) 
 					</p>
 					<p>
 						But yeah… This was <b>“The Prisoner: Dread or Trust”</b>. 
