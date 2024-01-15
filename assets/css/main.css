@@ -2240,10 +2240,10 @@ input, select, textarea {
 	#home #logo {
 		/* position: absolute;
 		right: 1.5em; */
-		margin-top: -0.9em;
+		margin-top: -0.5em;
 		margin-left: -0.8em;
 		margin-right: -0.1em;
-		height: 2em;
+		height: 2.5em;
 	}
 
 	.card-description {

@@ -234,12 +234,9 @@ export const projects = [
 				title: "9 The Game TODAY",
 				media: 
 					// `<img src="assets/css/images/cover-img/the-prisoner.png"></img>`,
-					`<iframe frameborder="0" src="https://itch.io/embed-upload/8683860?color=000000" allowfullscreen="" width="100%" height="auto"><a href="https://jaykozatt.itch.io/the-prisoner">Play The Prisoner: Dread or Trust on itch.io</a></iframe>`,
+					`<iframe frameborder="0" src="https://itch.io/embed-upload/9499701?color=000000" allowfullscreen="" width="100%" height="auto"><a href="https://jaykozatt.itch.io/the-prisoner">Play The Prisoner: Dread or Trust on itch.io</a></iframe>`,
 				text: 
 					`<p>
-						(<b>Update:</b> Finally managed to get the WebGL version working.) 
-					</p>
-					<p>
 						But yeah… This was <b>“The Prisoner: Dread or Trust”</b>. 
 					</p>
 					<p>
@@ -544,7 +541,7 @@ export const projects = [
 			{
 				title: "12 The Game TODAY",
 				media: 
-					`<iframe frameborder="0" src="https://itch.io/embed-upload/8164589?color=3f2832" allowfullscreen="" width="100%" height="auto" scrolling="no" referrerpolicy=origin><a href="https://jaykozatt.itch.io/all-bets-are-off">Play All Bets Are Off! on itch.io</a></iframe>`,
+					`<iframe frameborder="0" src="https://itch.io/embed-upload/9499687?color=3f2832" allowfullscreen="" width="100%" height="auto" referrerpolicy=origin><a href="https://jaykozatt.itch.io/all-bets-are-off">Play All Bets Are Off! on itch.io</a></iframe>`,
 					// `<iframe frameborder="0" src="https://itch.io/embed-upload/7267775?color=ac313f" allowfullscreen="" width="100%" height="auto" scrolling="no" referrerpolicy=origin><a href="https://jaykozatt.itch.io/all-bets-are-off">Play All Bets Are Off! on itch.io</a></iframe>`,
 					// `<iframe frameborder="0" src="game-builds/all-bets/index.html" allowfullscreen="" width="100%" height="auto" scrolling="no" referrerpolicy=origin><a href="https://jaykozatt.itch.io/all-bets-are-off">Play All Bets Are Off! on itch.io</a></iframe>`,
 
@@ -794,7 +791,7 @@ export const projects = [
 			{
 				title: "6 Lessons and Takeaways",
 				media: 
-					`<iframe frameborder="0" src="https://itch.io/embed-upload/8407942?color=333333" allowfullscreen="" width="100%" height="auto"><a href="https://jaykozatt.itch.io/gaias-revenge">Play Gaia's Revenge on itch.io</a></iframe>`,
+					`<iframe frameborder="0" src="https://itch.io/embed-upload/9499280?color=327345" allowfullscreen="" width="100%" height="auto"><a href="https://jaykozatt.itch.io/gaias-revenge">Play Gaia's Revenge on itch.io</a></iframe>`,
 				text: 
 					`<p>
 						Overall, this was a nice break from my other work and I'm glad that I took part in the event.
@@ -822,7 +819,7 @@ export const projects = [
 		slides: [
 			{
 				title: "Quick Summary",
-				media: `<img src="assets/css/images/cover-img/the-path.png"></img>`,
+				media: `<img src="assets/css/images/slideshow/the-path/0.png"></img>`,
 				text: 
 					`<p>
 						This was the first project I worked on, as a <b>solo freelancer.</b> I offered my services as a <b>games programmer</b> with a focus on gameplay engineering.
@@ -1057,34 +1054,135 @@ export const projects = [
 			},
 		]
 	},
-	{ // Unassigned
+	{ // SumMatch
 		id: 5,
-		name: "The Path",
-		projectLink: "https://jaykozatt.itch.io/gaias-revenge",
-		projectSrc: "",
+		name: "SumMatch",
+		projectLink: "https://play.google.com/store/apps/details?id=com.macoMP.SumMatch",
+		projectSrc: "https://gitlab.com/jaykozatt/summatch",
 		slides: [
 			{
-				title: "",
-				media: `<img src=""></img>`,
+				title: "Quick Summary",
+				media: `<img src="assets/css/images/slideshow/summatch/0.png"></img>`,
 				text: 
 					`<p>
-						
+						On this project I was <b>tasked with building the multiplayer for an existing game.</b> A Sudoku-styled puzzle game in which you must figure out the value of each cell. Simple concept.
+					</p>
+					<p>
+						The caveat was that its code had been generated through AI. Which made the codebase less than ideal for the mission.
+					</p>
+					<p>
+						<b>My role on this project</b> was therefore:
+					</p>
+					<ul>
+						<li>
+							<b>To salvage</b> whatever was usable from the generative AI's code, and repurpose it for multiplayer. 
+						</li>
+						<li>
+							<b>Create a lobby system</b> where players could jump into matches as they came, or look for specific players to challenge.
+						</li>
+						<li>
+							<b>Figure out</b> how to best modify existing gameplay to fit a competitive 1v1 multiplayer experience.
+						</li>
+						<li>
+							<b>And integrate Unity Ads</b>, according to specifications.
+						</li>
+					</ul>
+					<p>
+						To achieve those tasks, I leveraged Unity's <b>Lobby and Relay</b> technologies, as well as their <b>Netcode for GameObjects</b> library.
+					</p>
+					<p>
+						In addition to that, I was also tasked with <b>creating the app's icon</b>, and the <b>screenshot images</b> to be used within the various App Stores.
+					</p>
+					<p>
+						Being my first multiplayer implementation, what was initially scoped to be a 3 to 4 weeks long project, unflatteringly devolved into a 2 months affair. Not my finest moment.
 					</p>`, 
 			},
 			{
-				title: "",
-				media: `<img src=""></img>`,
+				title: "1 Unforeseen Difficulties: Generative AI",
+				media: `<img src="assets/css/images/slideshow/summatch/1.png"></img>`,
 				text: 
 					`<p>
-						
+						While the wonders of <b>AI chat bots never cease to amaze</b> with what they are able to pull off, this project's initial state should serve as <b>a cautionary tale of the dangers of such technology</b> in the hands of the uninitiated.
+					</p>
+					<p>
+						<b>The client reported having used generative AI</b> to output the game's code, by feeding it with the descriptions of what he wanted. And so, the code is exactly what you would typically expect from the current state of AI technology.
+					</p>
+					<p>
+						<b>The code was not re-usable</b> in its initial state for the purpose of multiplayer. The reason being that the implementation <b>wasn't programmed with scalability in mind</b>. It merely achieved the initial goal set by client with no regard for future developments. 
+					</p>
+					<p>
+						So after looking through that, I decided the best course of action was to <b>rebuild the gameplay from scratch</b> for multiplayer, and leave the singleplayer systems untouched in isolation. Considering the simplicity of the game, <b>this was the cheaper solution.</b>
+					</p>
+					<p>
+						But regardless, this still set me back on my propused timeline, since I wasn't expecting to have to rebuild gameplay from scratch to that extent.
 					</p>`, 
 			},
 			{
-				title: "",
-				media: `<img src=""></img>`,
+				title: "2 Challenges",
+				media: `<img src="assets/css/images/slideshow/summatch/2.png"></img>`,
 				text: 
 					`<p>
-						
+						You could say that the feature that gave me <b>the most grief</b> was the lobby along with its matchmaking functionality.
+					</p>
+					<p>
+						Though it was not that the concept was difficult to grasp. But rather, the issue was <b>the meticulous nature</b> of needing to cover each of the potential cases of failure that could happen. As is always the case with all things internet.
+					</p>
+					<p>
+						<b>At any point, the application could experience a loss in connectivity.</b> And if it's not equipped to handle it, the most common result would be the application hanging up indefinitely.
+					</p>
+					<p>
+						So what was most challenging for me, was <b>making sure the application could always recover robustly</b> from each of those potential instances. And to do that, I had to fully grasp how Unity's Lobby and Relay systems operated, which took me a while.
+					</p>`, 
+			},
+			{
+				title: "3 Networking Architecture",
+				media: `<img src="assets/css/images/slideshow/summatch/3.png"></img>`,
+				text: 
+					`<p>
+						One of the most interesting parts of this project for me was figuring out how to set up the gameplay architecture to permit network synchronisation between host and client, using Unity's <b>"Netcode for GameObjects"</b> library.
+					</p>
+					<p>
+						To achieve that, I structured everything into an <b>overall "Game Board" controlled by the server</b>, and responsible for generating the puzzle, distributing it to each player instance, and validating solutions; and <b>"Player Boards" to house each player's instance of the board</b> as well as their progression towards solving the puzzle.
+					</p>
+					<p>
+						By this point, I've naturally adopted an architecturing style fairly similar to the <b>Model-View-Controller architecture</b> that's quite common in software engineering. So the structures mentioned above would represent both the Model and Controller parts of the equation, with my "GUI" or View scripts being separated into their own components.
+					</p>
+					<p>
+						While the parallels might become a little difficult to draw sometimes, <b>one golden rule I always abide by</b> when deciding how to sort my scripts is that GUI scripts (denoted with "GUI" being part of their name or being housed in a GUI folder) handle information display and interfacing with the player's input, while anything else is essentially an internal-logic script that does not interface directly with the player. A sort of frontend and backend, if you will. 
+					</p>`, 
+			},
+			{
+				title: "4 Additional Highlights",
+				media: `<img src="assets/css/images/slideshow/summatch/4.webp"></img>`,
+				text: 
+					`<p>
+						Another interesting highlight of the project was the inclusion of the <b>Elo rating system</b> into the game.
+					</p>
+					<p>
+						The client gave me lots of freedom to solve problems as I saw fit, and one the challenges I encountered was related to <b>the question of how to pair players of different levels of skill</b>.
+					</p>
+					<p>
+						To solve that, I took a page out of <b>Chess</b> with the Elo rating system.
+					</p>
+					<p>
+						While it doesn't take a genius to implement such a simple system (inventing it might be a different matter), one of the nice benefits it offers is that <b>it ranks players into a bell curve distribution</b>, irrespective of population size. Which allows it to scale nicely with an application's growth.
+					</p>`, 
+			},
+			{
+				title: "5 Closing Remarks",
+				media: `<img src="assets/css/images/slideshow/summatch/5.png"></img>`,
+				text: 
+					`<p>
+						<b>To conclude this entry</b>, I've got to say that despite the numerous setbacks I encountered along the way, this was a satisfying project to be involved in.
+					</p>
+					<p>
+						Even if it did burn me out a bit (since I'm not a fan of implementing connectivity features), being able to create an application that robustly recovers from pretty much every connectivity issue you could throw at it, gave me a fair share of satisfaction.
+					</p>
+					<p>
+						<b>It was a difficult task that I didn't love, but the result was satisfaying.</b>
+					</p>
+					<p>
+						The client was also happy with the work I did, despite the delays. And I managed to communicate well whenever an issue arose that would cause a setback on our timeline.
 					</p>`, 
 			},
 		]
