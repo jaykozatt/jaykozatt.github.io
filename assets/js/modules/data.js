@@ -234,7 +234,7 @@ export const projects = [
 				title: "9 The Game TODAY",
 				media: 
 					// `<img src="assets/css/images/cover-img/the-prisoner.png"></img>`,
-					`<iframe frameborder="0" src="https://itch.io/embed-upload/9499701?color=000000" allowfullscreen="" width="100%" height="auto"><a href="https://jaykozatt.itch.io/the-prisoner">Play The Prisoner: Dread or Trust on itch.io</a></iframe>`,
+					`<iframe frameborder="0" src="https://itch.io/embed-upload/9508299?color=000000" allowfullscreen="" width="100%" height="auto"><a href="https://jaykozatt.itch.io/the-prisoner">Play The Prisoner: Dread or Trust on itch.io</a></iframe>`,
 				text: 
 					`<p>
 						But yeah… This was <b>“The Prisoner: Dread or Trust”</b>. 
