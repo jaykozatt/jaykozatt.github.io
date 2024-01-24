@@ -814,7 +814,7 @@ export const projects = [
 	{ // The Path
 		id: 4,
 		name: "The Path",
-		projectLink: "https://play.google.com/store/apps/details?id=com.Maco.ThePath",
+		projectLink: "https://drive.google.com/file/d/1AhjTwYjiaZjQ97dHpDyuYak7yGtYYL8b/view?usp=sharing",
 		projectSrc: "https://gitlab.com/jaykozatt/the-path",
 		slides: [
 			{
@@ -1025,7 +1025,10 @@ export const projects = [
 			},
 			{
 				title: "4 Results after my service",
-				media: `<img src="assets/css/images/slideshow/the-path/4.png"></img>`,
+				media: `<video muted loop controls poster="assets/css/images/slideshow/the-path/4.png">
+							<source src="assets/css/images/slideshow/the-path/4.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>`,
 				text: 
 					`<p>
 						All in all, <b>the client was quite satisfied with the results,</b> and left a glowing recommendation to anyone that might hire me in the future. In his words:
@@ -1057,7 +1060,7 @@ export const projects = [
 	{ // SumMatch
 		id: 5,
 		name: "SumMatch",
-		projectLink: "https://play.google.com/store/apps/details?id=com.macoMP.SumMatch",
+		projectLink: "https://drive.google.com/file/d/1B-QjKWWPdmjxY1e_virGLGAAFQBCGEcC/view?usp=sharing",
 		projectSrc: "https://gitlab.com/jaykozatt/summatch",
 		slides: [
 			{
@@ -1170,7 +1173,10 @@ export const projects = [
 			},
 			{
 				title: "5 Closing Remarks",
-				media: `<img src="assets/css/images/slideshow/summatch/5.png"></img>`,
+				media: `<video muted loop controls poster="assets/css/images/slideshow/summatch/5.png">
+							<source src="assets/css/images/slideshow/summatch/5.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>`,
 				text: 
 					`<p>
 						<b>To conclude this entry</b>, I've got to say that despite the numerous setbacks I encountered along the way, this was a satisfying project to be involved in.
