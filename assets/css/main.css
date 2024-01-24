@@ -2246,6 +2246,15 @@ input, select, textarea {
 		height: 2.5em;
 	}
 
+	@media screen and (max-width: 1024px) {
+		#home #logo {
+			display:none;
+		}	
+		#home #logo-heading {
+			display:none;
+		}
+	}
+
 	.card-description {
 		font-weight: 500;
 		font-size: 90%;
