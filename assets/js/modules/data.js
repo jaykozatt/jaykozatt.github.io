@@ -1025,7 +1025,7 @@ export const projects = [
 			},
 			{
 				title: "4 Results after my service",
-				media: `<video muted loop controls poster="assets/css/images/slideshow/the-path/4.png">
+				media: `<video muted loop controls preload="auto" poster="assets/css/images/slideshow/the-path/4.png">
 							<source src="assets/css/images/slideshow/the-path/4.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>`,
@@ -1173,7 +1173,7 @@ export const projects = [
 			},
 			{
 				title: "5 Closing Remarks",
-				media: `<video muted loop controls poster="assets/css/images/slideshow/summatch/5.png">
+				media: `<video muted loop controls preload="auto" poster="assets/css/images/slideshow/summatch/5.png">
 							<source src="assets/css/images/slideshow/summatch/5.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>`,
